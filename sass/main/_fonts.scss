@@ -1,0 +1,9 @@
+@mixin font ($size) {
+    font-size: $size;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+@mixin serif ($size) {
+    font-size: $size;
+    font-family: Lora, serif;
+}

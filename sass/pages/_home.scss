@@ -1,0 +1,146 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+body {
+    background-color: $base-color;
+}
+
+/* Carousel */
+
+.carousel {
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+
+/* Coupon */
+
+.coupon {
+    width: 35%;
+    display:block;
+    margin:auto;
+    padding: 2.5rem;
+}
+
+/* New Collection */
+
+.new__container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(58, 58, 58, 0.541);}
+
+.new__container {
+    position: relative;
+    margin: 2rem 0rem;
+    background-image: url("../../assets/img/new-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .new__info{
+        @include flex (column, center);
+        h1 {
+            position: relative;
+            letter-spacing: .5rem;
+            @include serif(3.5rem);
+            color: $beige;
+        }
+        h2 {
+            position: relative;
+            @include serif(2rem);
+            color: $beige;
+            margin-bottom: 1rem;
+            letter-spacing: .3rem;
+        }
+        button {
+            position: relative;
+            @include font(1.5rem);
+            border: 0rem;
+            border-radius: 5%;
+            background-color: $dark;
+            color: $beige;
+            padding: .5rem 4rem;
+            letter-spacing: .3rem;
+        }
+    }
+    
+    .new__img1 {
+        width: 70%;
+        margin: 3rem 0rem 1rem 3rem;
+        box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.15);
+    }
+    .new__img2 {
+        width: 70%;
+        margin: 9rem 0rem 1rem 2rem;
+        box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.15);
+    }
+    .new__img3 {
+        width: 70%;
+        margin: 15rem 0rem 3rem 1rem;
+        box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.15);
+    }
+
+}
+
+/* Fixed Background */
+
+.fixed {
+    background-image: url("../../assets/img/fixed.jpeg");
+    position: fixed;
+    background-size: cover;
+    h3 {
+        font-size: 20rem;
+    }
+}
+
+
+/* Cards FUTURO CAROUSEL */
+
+.cards__title {
+    margin: 3rem 0rem 5rem 0rem;
+    h1 {
+        @include serif(3.5rem);
+        color: $dark; 
+        text-align: center;
+    }
+}
+
+.cards__container{
+    @include flex(row, space-evenly);
+    .cards {
+        @include flex(column,center);
+        background-color: $pink;
+        color: $base-color;
+        width: 20%;
+        padding: 0rem -3rem;
+        img {
+            width: 50%;
+            margin: 1rem;
+        }
+        p {
+            @include font(1.8rem);
+        }
+        .cards__price {
+            @include font(1.2rem);  
+        }
+        button {
+            @include font(1.5rem);
+            border: 0rem;
+            border-radius: 5%;
+            background-color: $base-color;
+            color: $pink;
+            padding: .5rem;
+            transition: .5s;
+            margin:.5rem 0rem 2rem 0rem;
+            &:hover{
+                background-color: $light-pink;
+                color: $pink;
+                transform: scale(1.03, 1.03);
+            }
+        }
+    }
+}

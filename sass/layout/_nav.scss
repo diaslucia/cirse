@@ -1,0 +1,68 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+
+nav {
+    width: 99vw;
+    font-size: 25px;
+    background-color: $base-color;
+    .nav__first {
+        @include flex(row, center);
+        .nav__logo{
+            list-style-type: none;
+            .nav__logoprincipal {
+                @include font (3.5rem);
+                margin: 1rem;
+                a{
+                    text-decoration: none;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .nav__login--container{
+        ul{
+            @include flex(row, center);
+            .nav__login {
+                @include font (2rem);
+                position: absolute;
+                z-index: 1;
+                top: 15px;
+                right: 60px; 
+            }
+            a {color: $secondary-color;
+                text-decoration: none;
+                &:hover {color:$dark;
+                }
+                #shoppingcart {
+                    font-size: 1.8rem;
+                    z-index: 1;
+                    color: $secondary-color;
+                    position: absolute;
+                    z-index: 1;
+                    top: 22px;
+                    right: 25px; 
+                }
+            }
+        }
+    }
+    .nav__second {
+        background-color: $secondary-color;
+        padding: 1.5rem 0rem 1rem 0rem;
+        ul {
+            @include flex(row, space-around);
+            @include font (2.2rem);
+            list-style-type: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;;
+            a{
+                text-decoration: none;
+                color: $beige;
+                &:hover {color:$base-color;}
+            }
+        }
+    }
+   
+}
