@@ -1,0 +1,13 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+body {
+    background-color: $base-color;
+}
+
+.cart__container {
+    @include flex(column, center);
+    align-content: flex-start;
+}

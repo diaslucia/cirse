@@ -1,0 +1,42 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+body {
+    background-color: $base-color;
+}
+
+.dresses__container {
+    @include flex(row, center);
+    align-content: flex-start;
+    flex-wrap: wrap;
+    .dresses__div {
+        @include flex(column, center);
+        background-color: $beige;
+        color: $base-color;
+        margin: 1rem;
+        width:auto;
+        img {
+            width: 15rem;
+            margin: 1rem;
+        }
+        .dresses__title {@include font(1.5rem); color: $dark; margin: .2rem 0rem;}
+        .dresses__price {@include font(1rem); color: $dark;}
+        button {
+            @include font(1.5rem);
+            border: 0rem;
+            border-radius: 5%;
+            background-color: $base-color;
+            color: $secondary-color;
+            padding: .5rem;
+            transition: 1s;
+            margin:.1rem 0rem 1.6rem 0rem;
+            &:hover{color: $dark;
+                box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.267);
+            } &:active{
+                box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52);
+            }
+        };
+    }
+}

@@ -146,7 +146,7 @@ nav {
       nav .nav__first .nav__logo .nav__logoprincipal {
         font-size: 3.5rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
-        margin: 1rem; }
+        margin: 1rem 0rem -.5rem 0rem; }
         nav .nav__first .nav__logo .nav__logoprincipal a {
           text-decoration: none;
           color: #7d7772; }
@@ -183,7 +183,7 @@ nav {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      font-size: 2.2rem;
+      font-size: 1.5rem;
       font-family: Poppins, Arial, Helvetica, sans-serif;
       list-style-type: none;
       text-transform: uppercase;
@@ -343,8 +343,7 @@ body {
       margin: .5rem 0rem 2rem 0rem; }
       .cards__container .cards button:hover {
         background-color: #ebe1e4;
-        color: #bc8b9c;
-        transform: scale(1.03, 1.03); }
+        color: #bc8b9c; }
 
 * {
   margin: 0rem;
@@ -483,5 +482,85 @@ body {
       margin: .5rem 0rem 2rem 0rem; }
       .cards__container .cards button:hover {
         background-color: #ebe1e4;
-        color: #bc8b9c;
-        transform: scale(1.03, 1.03); }
+        color: #bc8b9c; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+body {
+  background-color: #f9f9f9; }
+
+.dresses__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+  .dresses__container .dresses__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee7d6;
+    color: #f9f9f9;
+    margin: 1rem;
+    width: auto; }
+    .dresses__container .dresses__div img {
+      width: 15rem;
+      margin: 1rem; }
+    .dresses__container .dresses__div .dresses__title {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      color: #7d7772;
+      margin: .2rem 0rem; }
+    .dresses__container .dresses__div .dresses__price {
+      font-size: 1rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      color: #7d7772; }
+    .dresses__container .dresses__div button {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      border: 0rem;
+      border-radius: 5%;
+      background-color: #f9f9f9;
+      color: #c2a893;
+      padding: .5rem;
+      transition: 1s;
+      margin: .1rem 0rem 1.6rem 0rem; }
+      .dresses__container .dresses__div button:hover {
+        color: #7d7772;
+        box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.267); }
+      .dresses__container .dresses__div button:active {
+        box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+body {
+  background-color: #f9f9f9; }
+
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start; }
