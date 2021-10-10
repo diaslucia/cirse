@@ -8,6 +8,46 @@ body {
 }
 
 .cart__container {
-    @include flex(column, center);
-    align-content: flex-start;
+    @include flex2(column, flex-start, flex-start);
+    padding: 1rem;
+    .cart__div {
+        @include flex(row, space-evenly);
+        margin: 1rem;
+        img {width: 100px;}
+        .dresses__cart--title {
+            @include font(1.5rem);
+            margin: 1rem;
+            color: $dark;
+        }
+        .dresses__cart--price {
+            @include font(1.5rem);
+            margin: .5rem;       
+        }
+    }
 }
+
+.cart__container--price {
+    margin-left: 13rem;
+    .subtotal {
+        @include font(1.5rem);
+        color: $dark;
+    }
+    button {
+        @include font(1.8rem);
+        text-transform: uppercase;
+        border: 0rem;
+        border-radius: 5%;
+        background-color: $beige;
+        color: $secondary-color;
+        padding: 1rem;
+        transition: 1s;
+        margin:auto;
+        &:hover{color: $dark;
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, .2);
+        } &:active{
+            box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52);
+        }
+    }
+}
+
+

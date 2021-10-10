@@ -19,8 +19,8 @@ class Productos {
 const productoArray = [];
 
 productoArray.push(new Productos(1020, "Alex Dress", 2000, 32, "White long dress with red flowers", "../assets/img/card1.jpg"));
-productoArray.push(new Productos(1021, "Rebecca Dress", 2500, 35, "Light blue dress with white hearts", "../assets/img/card2.jpg"));
-productoArray.push(new Productos(1022, "Sunny Dress", 2500, 15, "Pink and white dress", "../assets/img/card3.jpg"));
+productoArray.push(new Productos(1021, "Rebecca Dress", 2800, 35, "Light blue dress with white hearts", "../assets/img/card2.jpg"));
+productoArray.push(new Productos(1022, "Sunny Dress", 2900, 15, "Pink and white dress", "../assets/img/card3.jpg"));
 productoArray.push(new Productos(1023, "Sandy Dress", 3000, 25, "White dress with borwn flowers", "../assets/img/card4.jpg"));
 
 console.log(productoArray);

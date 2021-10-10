@@ -291,14 +291,6 @@ body {
     margin: 15rem 0rem 3rem 1rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
 
-/* Fixed Background */
-.fixed {
-  background-image: url("../../assets/img/fixed.jpeg");
-  position: fixed;
-  background-size: cover; }
-  .fixed h3 {
-    font-size: 20rem; }
-
 /* Cards FUTURO CAROUSEL */
 .cards__title {
   margin: 3rem 0rem 5rem 0rem; }
@@ -318,12 +310,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #bc8b9c;
+    background-color: #b396ab;
     color: #f9f9f9;
-    width: 20%;
-    padding: 0rem -3rem; }
+    margin: 1rem;
+    padding: 0rem 3rem;
+    width: auto; }
     .cards__container .cards img {
-      width: 50%;
+      width: 20rem;
       margin: 1rem; }
     .cards__container .cards p {
       font-size: 1.8rem;
@@ -430,14 +423,6 @@ body {
     margin: 15rem 0rem 3rem 1rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
 
-/* Fixed Background */
-.fixed {
-  background-image: url("../../assets/img/fixed.jpeg");
-  position: fixed;
-  background-size: cover; }
-  .fixed h3 {
-    font-size: 20rem; }
-
 /* Cards FUTURO CAROUSEL */
 .cards__title {
   margin: 3rem 0rem 5rem 0rem; }
@@ -457,12 +442,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #bc8b9c;
+    background-color: #b396ab;
     color: #f9f9f9;
-    width: 20%;
-    padding: 0rem -3rem; }
+    margin: 1rem;
+    padding: 0rem 3rem;
+    width: auto; }
     .cards__container .cards img {
-      width: 50%;
+      width: 20rem;
       margin: 1rem; }
     .cards__container .cards p {
       font-size: 1.8rem;
@@ -511,12 +497,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eee7d6;
     color: #f9f9f9;
     margin: 1rem;
     width: auto; }
     .dresses__container .dresses__div img {
-      width: 15rem;
+      width: 25rem;
       margin: 1rem; }
     .dresses__container .dresses__div .dresses__title {
       font-size: 1.5rem;
@@ -532,16 +517,45 @@ body {
       font-family: Poppins, Arial, Helvetica, sans-serif;
       border: 0rem;
       border-radius: 5%;
-      background-color: #f9f9f9;
+      background-color: #eee7d6;
       color: #c2a893;
       padding: .5rem;
       transition: 1s;
       margin: .1rem 0rem 1.6rem 0rem; }
       .dresses__container .dresses__div button:hover {
         color: #7d7772;
-        box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.267); }
+        box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
       .dresses__container .dresses__div button:active {
         box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+
+.filter__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: #c2a893 1px solid; }
+  .filter__container .dropdown {
+    position: relative;
+    margin: .5rem; }
+    .filter__container .dropdown .button__sortby {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      color: #7d7772;
+      padding: .3rem 3rem;
+      border: none;
+      border-left: #c2a893 1px solid;
+      background-color: #f9f9f9; }
+    .filter__container .dropdown .dropdownmenu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + .25rem);
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      background-color: #eee7d6;
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
 * {
   margin: 0rem;
@@ -561,6 +575,46 @@ body {
 .cart__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start; }
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem; }
+  .cart__container .cart__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem; }
+    .cart__container .cart__div img {
+      width: 100px; }
+    .cart__container .cart__div .dresses__cart--title {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      margin: 1rem;
+      color: #7d7772; }
+    .cart__container .cart__div .dresses__cart--price {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      margin: .5rem; }
+
+.cart__container--price {
+  margin-left: 13rem; }
+  .cart__container--price .subtotal {
+    font-size: 1.5rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #7d7772; }
+  .cart__container--price button {
+    font-size: 1.8rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0rem;
+    border-radius: 5%;
+    background-color: #eee7d6;
+    color: #c2a893;
+    padding: 1rem;
+    transition: 1s;
+    margin: auto; }
+    .cart__container--price button:hover {
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .cart__container--price button:active {
+      box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }

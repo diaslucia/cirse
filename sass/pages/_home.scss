@@ -86,18 +86,6 @@ body {
 
 }
 
-/* Fixed Background */
-
-.fixed {
-    background-image: url("../../assets/img/fixed.jpeg");
-    position: fixed;
-    background-size: cover;
-    h3 {
-        font-size: 20rem;
-    }
-}
-
-
 /* Cards FUTURO CAROUSEL */
 
 .cards__title {
@@ -112,13 +100,14 @@ body {
 .cards__container{
     @include flex(row, space-evenly);
     .cards {
-        @include flex(column,center);
-        background-color: $pink;
+        @include flex(column, center);
+        background-color: $purple;
         color: $base-color;
-        width: 20%;
-        padding: 0rem -3rem;
+        margin: 1rem;
+        padding: 0rem 3rem;
+        width:auto;
         img {
-            width: 50%;
+            width: 20rem;
             margin: 1rem;
         }
         p {
