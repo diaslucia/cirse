@@ -30,11 +30,11 @@ productoArray.push(new Productos(11, "Rocky Dress", 2500, 25, "Button up dress w
 productoArray.push(new Productos(12, "Rebecca Dress", 2800, 25, "Dress with white little hearts", "../assets/img/dresses (12).jpg"));
 productoArray.push(new Productos(13, "Camilla Dress", 2600, 25, "Light blue polka dot dress", "../assets/img/dresses (13).jpg"));
 productoArray.push(new Productos(14, "Loner Dress", 3200, 25, "Button up long dress", "../assets/img/dresses (14).jpg"));
-productoArray.push(new Productos(14, "River Dress", 3300, 25, "Pink 3/4 slevees dress", "../assets/img/dresses (15).jpg"));
-productoArray.push(new Productos(14, "Soul Dress", 3350, 25, "Bow neck dress", "../assets/img/dresses (16).jpg"));
-productoArray.push(new Productos(14, "Rose Dress", 3100, 25, "Peter pan collar dress", "../assets/img/dresses (17).jpg"));
-productoArray.push(new Productos(14, "Sandy Dress", 3000, 25, "White dress with borwn flowers", "../assets/img/dresses (18).jpg"));
-productoArray.push(new Productos(14, "Mary Dress", 3500, 25, "Poet collar long dress", "../assets/img/dresses (19).jpg"));
+productoArray.push(new Productos(15, "River Dress", 3300, 25, "Pink 3/4 slevees dress", "../assets/img/dresses (15).jpg"));
+productoArray.push(new Productos(16, "Soul Dress", 3350, 25, "Bow neck dress", "../assets/img/dresses (16).jpg"));
+productoArray.push(new Productos(17, "Rose Dress", 3100, 25, "Peter pan collar dress", "../assets/img/dresses (17).jpg"));
+productoArray.push(new Productos(18, "Sandy Dress", 3000, 25, "White dress with borwn flowers", "../assets/img/dresses (18).jpg"));
+productoArray.push(new Productos(19, "Mary Dress", 3500, 25, "Poet collar long dress", "../assets/img/dresses (19).jpg"));
 
 
 // ----- Agregar productos a la tienda
