@@ -28,6 +28,7 @@ console.log(productoArray);
 // Contenedor de productos en HOME
 
 const contenedorCartas = document.querySelector(".cards__container");
+console.log($(".cards__container"));
 
 for (const producto of productoArray) {
     let cards = document.createElement("div");
@@ -36,8 +37,62 @@ for (const producto of productoArray) {
     <img src="${producto.img}" alt="${producto.descripcion}"/>
     <p>${producto.nombre}</p>
     <p class="cards__price">${producto.precio}</p>
-    <a href=""><button>Shop Now</button></a>`;
+    <a href="./views/dresses.html"><button>Shop Now</button></a>`;
 
     contenedorCartas.appendChild(cards);
 }
 
+// ----- Numero carrito
+
+const numeroCarritoStorage = localStorage.getItem('numeroCarrito');
+const numeroCarrito = document.querySelector(".circle");
+
+if(numeroCarritoStorage !== null) {
+    numeroCarrito.innerHTML = numeroCarritoStorage;
+}
+
+// ----- Slider
+
+let slidePosition = 0;
+const slides = document.getElementsByClassName('carousel__item');
+const totalSlides = slides.length;
+
+document.
+  getElementById('carousel__button--next')
+  .addEventListener("click", function() {
+    moveToNextSlide();
+  });
+document.
+  getElementById('carousel__button--prev')
+  .addEventListener("click", function() {
+    moveToPrevSlide();
+  });
+
+function updateSlidePosition() {
+  for (let slide of slides) {
+    slide.classList.remove('carousel__item--visible');
+    slide.classList.add('carousel__item--hidden');
+  }
+
+  slides[slidePosition].classList.add('carousel__item--visible');
+}
+
+function moveToNextSlide() {
+  if (slidePosition === totalSlides - 1) {
+    slidePosition = 0;
+  } else {
+    slidePosition++;
+  }
+
+  updateSlidePosition();
+}
+
+function moveToPrevSlide() {
+  if (slidePosition === 0) {
+    slidePosition = totalSlides - 1;
+  } else {
+    slidePosition--;
+  }
+
+  updateSlidePosition();
+}

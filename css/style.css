@@ -161,7 +161,19 @@ nav {
       position: absolute;
       z-index: 1;
       top: 15px;
-      right: 60px; }
+      right: 80px; }
+    nav .nav__login--container ul .circle {
+      background-color: #c2a893;
+      color: #f9f9f9;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      z-index: 1;
+      top: 22px;
+      right: 15px; }
     nav .nav__login--container ul a {
       color: #c2a893;
       text-decoration: none; }
@@ -174,7 +186,7 @@ nav {
         position: absolute;
         z-index: 1;
         top: 22px;
-        right: 25px; }
+        right: 45px; }
   nav .nav__second {
     background-color: #c2a893;
     padding: 1.5rem 0rem 1rem 0rem; }
@@ -338,6 +350,67 @@ body {
         background-color: #ebe1e4;
         color: #bc8b9c; }
 
+/* Sliders */
+.carousel {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none; }
+
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto; }
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px; }
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px; }
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px; }
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: opacity linear; } }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -469,6 +542,67 @@ body {
       .cards__container .cards button:hover {
         background-color: #ebe1e4;
         color: #bc8b9c; }
+
+/* Sliders */
+.carousel {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none; }
+
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto; }
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px; }
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px; }
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px; }
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: opacity linear; } }
 
 * {
   margin: 0rem;
@@ -603,7 +737,7 @@ body {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     color: #7d7772; }
   .cart__container--price button {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     border: 0rem;
@@ -617,4 +751,82 @@ body {
       color: #7d7772;
       box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
     .cart__container--price button:active {
+      box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+
+.cart__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 5rem; }
+  .cart__empty .emptyCart___title {
+    font-size: 2rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #7d7772; }
+  .cart__empty .button__emptyCart {
+    font-size: 1.6rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0rem;
+    border-radius: 5%;
+    background-color: #eee7d6;
+    color: #c2a893;
+    padding: 1rem;
+    transition: 1s;
+    margin: auto; }
+    .cart__empty .button__emptyCart:hover {
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .cart__empty .button__emptyCart:active {
+      box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+
+.calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem;
+  border: 2px solid #c2a893;
+  width: auto;
+  height: auto; }
+  .calc .calc__plus {
+    font-size: 1.6rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0rem;
+    border-right: 2px solid #c2a893;
+    border-radius: 5%;
+    background-color: #eee7d6;
+    color: #c2a893;
+    padding: 0rem .5rem;
+    transition: 1s;
+    margin: 0rem; }
+    .calc .calc__plus:hover {
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .calc .calc__plus:active {
+      box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+  .calc .calc__number {
+    font-size: 1.5rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #c2a893;
+    padding: 0rem 1rem;
+    margin-bottom: -.5rem; }
+  .calc .calc__minus {
+    font-size: 1.6rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0rem;
+    border-left: 2px solid #c2a893;
+    border-radius: 5%;
+    background-color: #eee7d6;
+    color: #c2a893;
+    padding: 0rem .5rem;
+    transition: 1s;
+    margin: 0rem; }
+    .calc .calc__minus:hover {
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .calc .calc__minus:active {
       box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }

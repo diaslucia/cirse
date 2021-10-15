@@ -1,7 +1,3 @@
-// ----- LocalStorage array
-
-const carritoLocalStorage = [];
-
 // ----- Función constructora
 
 class Productos {
@@ -41,8 +37,6 @@ productoArray.push(new Productos(14, "Sandy Dress", 3000, 25, "White dress with 
 productoArray.push(new Productos(14, "Mary Dress", 3500, 25, "Poet collar long dress", "../assets/img/dresses (19).jpg"));
 
 
-console.log(productoArray);
-
 // ----- Agregar productos a la tienda
 
 const contenedorVestidos = document.querySelector(".dresses__container");
@@ -60,16 +54,63 @@ for (const producto of productoArray) {
     let botonAddCart = document.createElement ("div");
     botonAddCart.className = "button__block";
     botonAddCart.innerHTML="<button>Add to Cart</button>";
-    botonAddCart.onclick = () => agregarProductoCarrito(producto);
-
+    botonAddCart.onclick = () => agregarAlCarrito(producto);
 
     vestidoDiv.appendChild(botonAddCart);
     contenedorVestidos.appendChild(vestidoDiv);
 }
 
-// ----- Agrega el producto al Carrito sólo se almacena en el local storage
+// ----- Agrega el producto al Carrito
 
-const agregarProductoCarrito = (producto) => {
-    carritoLocalStorage.push(producto);
-    localStorage.setItem("carrito", JSON.stringify(carritoLocalStorage));
-};
+const agregarAlCarrito = (producto) => {
+    
+    let carrito = localStorage.getItem('carrito');
+
+    if (carrito === null) {
+        carrito = [];
+    } else {
+        carrito = JSON.parse(carrito);
+    }
+
+    carrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    console.log('agregado correctamente');
+    sumarNumeroCarrito();
+}
+
+
+// ----- Sumar número carrito
+
+const numeroCarrito = document.querySelector(".circle");
+
+const sumarNumeroCarrito = () => {
+
+    let numeroCarritoInicial = localStorage.getItem('numeroCarrito');
+
+    if (numeroCarritoInicial === null) {
+        numeroCarritoInicial = 0;
+        console.log("esta vacio")
+    } else {
+        numeroCarritoInicial = localStorage.getItem('numeroCarrito');
+        console.log("no esta vacio!");
+    }
+
+    let numeroMostrar = Number(numeroCarritoInicial) + 1;
+    numeroCarrito.innerHTML = Number(numeroMostrar);
+    localStorage.setItem('numeroCarrito', numeroMostrar);
+}
+
+// ----- Que se guarde el número del carrito por más que se refresque
+
+const numeroCarritoStorage = localStorage.getItem('numeroCarrito');
+
+if(numeroCarritoStorage !== null) {
+    numeroCarrito.innerHTML = numeroCarritoStorage;
+}
+
+
+
+
+
+
+

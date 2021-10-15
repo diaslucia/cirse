@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^3.1.6",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.13"
   }
