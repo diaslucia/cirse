@@ -1,0 +1,48 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+// Dropdown Menu
+
+.filter__container {
+    @include flex(row, flex-end);
+    border-bottom: $secondary-color 1px solid;
+    .dropdown {
+        position: relative;
+        margin: .5rem;
+        .button__sortby, .button__filterby {
+            @include font (1.5rem);
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            color: $dark;
+            padding: .3rem 3rem;
+            border: none;
+            border-left: $secondary-color 1px solid;
+            background-color: $base-color;
+        }
+        .dropdownmenu {
+            position: absolute;
+            left: 0;
+            top: calc(100% + .80rem);
+            @include font (1.2rem);
+            background-color: $beige;
+            color: $secondary-color;
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, .1);
+            ul {
+                padding: 0rem;
+                margin: 0rem;
+                li {
+                    padding: .5rem 2.5rem;
+                    &:hover {
+                        background-color: $secondary-color;
+                        color: $dark;
+                    }
+                }
+            }
+
+        }
+        .dropdownmenu__sortby {display:none;};
+        .dropdownmenu__filterby {display:none;};
+}
+}

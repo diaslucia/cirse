@@ -75,7 +75,7 @@ const agregarAlCarrito = (producto) => {
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito));
     console.log('agregado correctamente');
-    sumarNumeroCarrito();
+    /* sumarNumeroCarrito(); */
 }
 
 
@@ -107,10 +107,5 @@ const numeroCarritoStorage = localStorage.getItem('numeroCarrito');
 if(numeroCarritoStorage !== null) {
     numeroCarrito.innerHTML = numeroCarritoStorage;
 }
-
-
-
-
-
 
 

@@ -21,19 +21,20 @@ const sumarCarrito = () => {
     let subtotalCarrito = 0;
 
     for (const producto of productosLocalStorage) {
-        subtotalCarrito = subtotalCarrito + calcPrecioIndividual;
+        subtotalCarrito = subtotalCarrito + precioANumero(producto.precio);
     }
     subtotal.innerText = `Subtotal: $${subtotalCarrito}`
     localStorage.setItem("subtotalAPagar", subtotalCarrito);
-}
+} 
 
 // ----- Agregar productos a la canasta
 
 const agregarProductoCarrito = () => {
-
+    
     for (const producto of productosLocalStorage) {
 
-        const existeProducto = productosLocalStorage.find(productoLocal => productoLocal.id === producto.id)
+        const existeProducto = productosLocalStorage.find(productoLocal => productoLocal.id === producto.id);
+        console.log(existeProducto);
 
             if (existeProducto === null) {
 
@@ -71,7 +72,6 @@ const agregarProductoCarrito = () => {
                 divCalc.appendChild(calcPlus);
                 divCalc.appendChild(calcNumber);
                 divCalc.appendChild(calcMinus);
-                carritoDiv.appendChild(cartPrecio);
                 carritoDiv.appendChild(divCalc);
                 contenedorCarrito.appendChild(carritoDiv);
                 
@@ -112,10 +112,6 @@ masProductos = () => {
  console.log("Mas productos")
 
 }
-
-
-
-
 
 
 /* const precioProductoCarrito = document.querySelector(".dresses__cart--price");

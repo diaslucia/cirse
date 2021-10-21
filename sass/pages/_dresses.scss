@@ -2,6 +2,7 @@
 @import "../main/flex";
 @import "../main/fonts";
 @import "../main/general";
+@import "../layout/filter";
 
 body {
     background-color: $base-color;
@@ -40,32 +41,3 @@ body {
     }
 }
 
-// Dropdown Menu
-
-.filter__container {
-    @include flex(row, flex-end);
-    border-bottom: $secondary-color 1px solid;
-    .dropdown {
-        position: relative;
-        margin: .5rem;
-        .button__sortby {
-            @include font (1.5rem);
-            text-transform: uppercase;
-            letter-spacing: .2rem;
-            color: $dark;
-            padding: .3rem 3rem;
-            border: none;
-            border-left: $secondary-color 1px solid;
-            background-color: $base-color;
-        }
-        .dropdownmenu {
-            position: absolute;
-            left: 0;
-            top: calc(100% + .25rem);
-            @include font (1.2rem);
-            background-color: $beige;
-            color: $dark;
-            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, .1);
-        }
-}
-}

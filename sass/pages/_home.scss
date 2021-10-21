@@ -143,7 +143,10 @@ body {
       img {
         width: 210px;
         margin: 10rem 3rem 0rem 3rem;
-        box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.15);
+        transition: 2s;
+        &:hover {
+          transform: scale(1.05,1.05);
+        }
       }
       }
   }
@@ -171,14 +174,13 @@ body {
       @include flex(column, center);
       margin: 3rem;
       img{
-        width: 19rem;
+        width: 25rem;
         margin: 1rem;
         height: auto;
-        box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.15);
       }
       p {
         @include font(1.8rem);
-        color: $pink;
+        color: $secondary-color;
         text-align: center;
         margin: 0rem;
       }
@@ -188,16 +190,17 @@ body {
       }
       .carousel__button {
         @include font(1.5rem);
+        letter-spacing: .2rem;
         border: 0rem;
         border-radius: 5%;
-        background-color: $pink;
+        background-color: $secondary-color;
         color: $base-color;
         padding: .5rem;
         transition: .5s;
         margin:.5rem 0rem 2rem 0rem;
         &:hover{
-            background-color: $light-pink;
-            color: $pink;
+            background-color: $beige;
+            color: $secondary-color;
         }
       }
     }
@@ -210,7 +213,7 @@ body {
 
   .carousel__actions {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     position: absolute;
     top: 35%;

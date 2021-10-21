@@ -363,7 +363,9 @@ body {
       .newin .newin__secondary .newin__img img {
         width: 210px;
         margin: 10rem 3rem 0rem 3rem;
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
+        transition: 2s; }
+        .newin .newin__secondary .newin__img img:hover {
+          transform: scale(1.05, 1.05); }
 
 /* Sliders */
 .cards__title {
@@ -390,14 +392,13 @@ body {
       align-items: center;
       margin: 3rem; }
       .carousel .carousel__item .cards img {
-        width: 19rem;
+        width: 25rem;
         margin: 1rem;
-        height: auto;
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
+        height: auto; }
       .carousel .carousel__item .cards p {
         font-size: 1.8rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
-        color: #bc8b9c;
+        color: #c2a893;
         text-align: center;
         margin: 0rem; }
       .carousel .carousel__item .cards .cards__price {
@@ -407,16 +408,17 @@ body {
       .carousel .carousel__item .cards .carousel__button {
         font-size: 1.5rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
+        letter-spacing: .2rem;
         border: 0rem;
         border-radius: 5%;
-        background-color: #bc8b9c;
+        background-color: #c2a893;
         color: #f9f9f9;
         padding: .5rem;
         transition: .5s;
         margin: .5rem 0rem 2rem 0rem; }
         .carousel .carousel__item .cards .carousel__button:hover {
-          background-color: #ebe1e4;
-          color: #bc8b9c; }
+          background-color: #eee7d6;
+          color: #c2a893; }
   .carousel .carousel__item--visible {
     display: block;
     animation: fadeVisibility 0.5s;
@@ -426,7 +428,7 @@ body {
     align-items: center; }
   .carousel .carousel__actions {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     position: absolute;
     top: 35%;
@@ -598,7 +600,9 @@ body {
       .newin .newin__secondary .newin__img img {
         width: 210px;
         margin: 10rem 3rem 0rem 3rem;
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
+        transition: 2s; }
+        .newin .newin__secondary .newin__img img:hover {
+          transform: scale(1.05, 1.05); }
 
 /* Sliders */
 .cards__title {
@@ -625,14 +629,13 @@ body {
       align-items: center;
       margin: 3rem; }
       .carousel .carousel__item .cards img {
-        width: 19rem;
+        width: 25rem;
         margin: 1rem;
-        height: auto;
-        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
+        height: auto; }
       .carousel .carousel__item .cards p {
         font-size: 1.8rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
-        color: #bc8b9c;
+        color: #c2a893;
         text-align: center;
         margin: 0rem; }
       .carousel .carousel__item .cards .cards__price {
@@ -642,16 +645,17 @@ body {
       .carousel .carousel__item .cards .carousel__button {
         font-size: 1.5rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
+        letter-spacing: .2rem;
         border: 0rem;
         border-radius: 5%;
-        background-color: #bc8b9c;
+        background-color: #c2a893;
         color: #f9f9f9;
         padding: .5rem;
         transition: .5s;
         margin: .5rem 0rem 2rem 0rem; }
         .carousel .carousel__item .cards .carousel__button:hover {
-          background-color: #ebe1e4;
-          color: #bc8b9c; }
+          background-color: #eee7d6;
+          color: #c2a893; }
   .carousel .carousel__item--visible {
     display: block;
     animation: fadeVisibility 0.5s;
@@ -661,7 +665,7 @@ body {
     align-items: center; }
   .carousel .carousel__actions {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     position: absolute;
     top: 35%;
@@ -699,6 +703,59 @@ html {
 .row .col .container-fluid {
   margin: 0rem !important;
   padding: 0rem !important; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+.filter__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: #c2a893 1px solid; }
+  .filter__container .dropdown {
+    position: relative;
+    margin: .5rem; }
+    .filter__container .dropdown .button__sortby, .filter__container .dropdown .button__filterby {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      color: #7d7772;
+      padding: .3rem 3rem;
+      border: none;
+      border-left: #c2a893 1px solid;
+      background-color: #f9f9f9; }
+    .filter__container .dropdown .dropdownmenu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + .80rem);
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      background-color: #eee7d6;
+      color: #c2a893;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1); }
+      .filter__container .dropdown .dropdownmenu ul {
+        padding: 0rem;
+        margin: 0rem; }
+        .filter__container .dropdown .dropdownmenu ul li {
+          padding: .5rem 2.5rem; }
+          .filter__container .dropdown .dropdownmenu ul li:hover {
+            background-color: #c2a893;
+            color: #7d7772; }
+    .filter__container .dropdown .dropdownmenu__sortby {
+      display: none; }
+    .filter__container .dropdown .dropdownmenu__filterby {
+      display: none; }
 
 body {
   background-color: #f9f9f9; }
@@ -745,35 +802,6 @@ body {
         box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
       .dresses__container .dresses__div button:active {
         box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
-
-.filter__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: #c2a893 1px solid; }
-  .filter__container .dropdown {
-    position: relative;
-    margin: .5rem; }
-    .filter__container .dropdown .button__sortby {
-      font-size: 1.5rem;
-      font-family: Poppins, Arial, Helvetica, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: .2rem;
-      color: #7d7772;
-      padding: .3rem 3rem;
-      border: none;
-      border-left: #c2a893 1px solid;
-      background-color: #f9f9f9; }
-    .filter__container .dropdown .dropdownmenu {
-      position: absolute;
-      left: 0;
-      top: calc(100% + .25rem);
-      font-size: 1.2rem;
-      font-family: Poppins, Arial, Helvetica, sans-serif;
-      background-color: #eee7d6;
-      color: #7d7772;
-      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
 * {
   margin: 0rem;
@@ -927,6 +955,59 @@ html {
   margin: 0rem !important;
   padding: 0rem !important; }
 
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+.filter__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: #c2a893 1px solid; }
+  .filter__container .dropdown {
+    position: relative;
+    margin: .5rem; }
+    .filter__container .dropdown .button__sortby, .filter__container .dropdown .button__filterby {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      color: #7d7772;
+      padding: .3rem 3rem;
+      border: none;
+      border-left: #c2a893 1px solid;
+      background-color: #f9f9f9; }
+    .filter__container .dropdown .dropdownmenu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + .80rem);
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      background-color: #eee7d6;
+      color: #c2a893;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1); }
+      .filter__container .dropdown .dropdownmenu ul {
+        padding: 0rem;
+        margin: 0rem; }
+        .filter__container .dropdown .dropdownmenu ul li {
+          padding: .5rem 2.5rem; }
+          .filter__container .dropdown .dropdownmenu ul li:hover {
+            background-color: #c2a893;
+            color: #7d7772; }
+    .filter__container .dropdown .dropdownmenu__sortby {
+      display: none; }
+    .filter__container .dropdown .dropdownmenu__filterby {
+      display: none; }
+
 body {
   background-color: #f9f9f9; }
 
@@ -972,3 +1053,71 @@ body {
         box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
       .accesories__container .accesories__div button:active {
         box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+body {
+  background-color: #f9f9f9; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+.filter__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: #c2a893 1px solid; }
+  .filter__container .dropdown {
+    position: relative;
+    margin: .5rem; }
+    .filter__container .dropdown .button__sortby, .filter__container .dropdown .button__filterby {
+      font-size: 1.5rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      color: #7d7772;
+      padding: .3rem 3rem;
+      border: none;
+      border-left: #c2a893 1px solid;
+      background-color: #f9f9f9; }
+    .filter__container .dropdown .dropdownmenu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + .80rem);
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      background-color: #eee7d6;
+      color: #c2a893;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1); }
+      .filter__container .dropdown .dropdownmenu ul {
+        padding: 0rem;
+        margin: 0rem; }
+        .filter__container .dropdown .dropdownmenu ul li {
+          padding: .5rem 2.5rem; }
+          .filter__container .dropdown .dropdownmenu ul li:hover {
+            background-color: #c2a893;
+            color: #7d7772; }
+    .filter__container .dropdown .dropdownmenu__sortby {
+      display: none; }
+    .filter__container .dropdown .dropdownmenu__filterby {
+      display: none; }
