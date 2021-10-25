@@ -45,7 +45,7 @@
                             <ul>
                                 <li class="nav__login"><a href="">Log In</a></li>
                                 <li><a href="./cart.html"><i id="shoppingcart" class="fas fa-shopping-cart"></i></a></li>
-                                <a href="./cart.html"><li class="circle">0</li></a>
+                                <a href="./cart.html"><li class="circle"></li></a>
                             </ul>
                         </div>
                 </div>
@@ -65,26 +65,54 @@
     </div>
     <!-- End Nav -->
 
-    <!-- Start Filter Bar -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-12 col-lg-12 col-xl-12 filter__container">
-                <div class="dropdown">
-                    <button class="button__sortby">Sort by</button>
-                    <div class="dropdownmenu">
-                        Dropdown Content
-                    </div>
+   <!-- Start Filter Bar -->
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-12 filter__container" id="dropdown">
+            <div class="dropdown">
+                <button class="button__sortby">Sort by</button>
+                <div class="dropdownmenu dropdownmenu__sortby">
+                    <ul>
+                        <li class="filter__recommended">Recommended</li>
+                        <li class="filter__high">Price High-Low</li>
+                        <li class="filter__low">Price Low-High</li>
+                    </ul>
                 </div>
-                <div class="dropdown">
-                    <button class="button__sortby">Filter by</button>
-                    <div class="dropdownmenu">
-                        Dropdown Content
-                    </div>
+            </div>
+            <div class="dropdown">
+                <button class="button__filterby">Filter by</button>
+                <div class="dropdownmenu dropdownmenu__filterby">
+                    <ul>
+                        <li class="filter__filterby clear" id="filter__clear">Clear Filters</li>
+                        <li class="filter__filterby filter__lengthButton" id="filter__subtitles">+ Length</li>
+                            <ul id="filter__length">
+                                <li class="mini">Mini</li>
+                                <li class="aboveKnee">Above the Knee</li>
+                                <li class="midi">Midi</li>
+                                <li class="long">Long</li>
+
+                            </ul>
+                        <li class="filter__filterby filter__neckButton" id="filter__subtitles">+ Neck Style</li>
+                            <ul id="filter__neck">
+                                <li class="collared">Collared</li>
+                                <li class="vNeck">V Neck</li>
+                                <li class="scoop">Scoop Neck</li>
+                                <li class="square">Square Neck</li>
+                            </ul>
+                        <li class="filter__filterby filter__sleeveButton" id="filter__subtitles">+ Sleeve Length</li>
+                            <ul id="filter__sleeve">
+                                <li class="sleeveless">Sleeveless</li>
+                                <li class="shortSleeve">Short Sleeve</li>
+                                <li class="longSleeve">Long Sleeve</li>
+                                <li class="3/4Sleeve">3/4 Sleeve</li>
+                            </ul>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Filter Bar -->
+</div>
+<!-- End Filter Bar -->
 
 
 
@@ -93,7 +121,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-2 col-md-2 col-lg-2 col-xl-2"></div>
-            <div class="col-9 col-md-9 col-lg-9 col-xl-9 dresses__container"></div>
+            <div class="col-9 col-md-9 col-lg-9 col-xl-9 dresses__container" id="dresses__container"></div>
             <div class="col-2 col-md-2 col-lg-2 col-xl-2"></div>
         </div>
     </div>
@@ -171,6 +199,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <!-- JS -->
+    <script src="../js/data.js"></script>
+    <script src="../js/clases.js"></script>
     <script src="../js/dresses.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

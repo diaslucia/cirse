@@ -1,14 +1,5 @@
 //PÁGINA HOME
 
-// ----- Numero carrito
-
-const numeroCarritoStorage = localStorage.getItem('numeroCarrito');
-const numeroCarrito = document.querySelector(".circle");
-
-if(numeroCarritoStorage !== null) {
-    numeroCarrito.innerHTML = numeroCarritoStorage;
-}
-
 // ----- Slider
 
 let slidePosition = 0;
