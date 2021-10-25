@@ -28,9 +28,11 @@ body {
 
 .cart__container--price {
     margin-left: 13rem;
+    margin-top: .5rem;
     .subtotal {
         @include font(1.5rem);
         color: $dark;
+        margin-bottom: 0rem;
     }
     button {
         @include font(1.6rem);
@@ -46,6 +48,37 @@ body {
             box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, .2);
         } &:active{
             box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52);
+        }
+    }
+    .subtotal__coupon {
+        margin-bottom: 1.5rem;
+        #coupon {
+            @include font(1.5rem);
+            border: 1px solid $secondary-color;
+            border-radius: 4px;
+            color: $secondary-color;
+            background-color: $base-color;
+            text-align: center;
+            width: 13rem;
+            height: 3rem;
+        }
+        #submit {
+        @include font(1.5rem);
+        border: 0rem;
+        border-radius: 5%;
+        background-color: $beige;
+        color: $secondary-color;
+        margin: 1rem 0rem;
+        padding: .4rem;
+        transition: 1s;
+        margin:auto;
+        }
+        #form__alert {
+            @include font(1.2rem);
+            color: rgb(168, 35, 35);
+            margin: 0rem;
+            padding-top: .5rem;
+            display: none;
         }
     }
 }

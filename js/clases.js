@@ -17,6 +17,11 @@ class Helper {
         const id = parseInt(num);
         return productos.find((producto) => producto.id === id);
     }
+
+    static obtenerAccesorioPorId(num) {
+        const id = parseInt(num);
+        return accesorios.find((producto) => producto.id === id);
+    }
 }
 
 class Carrito {
@@ -30,7 +35,6 @@ class Carrito {
 
     agregarProducto(producto) {
         let prod = this.productos.find(item => item.producto.id == producto.id);
-        console.log(prod);
         if (prod === undefined) {
             this.productos.push({ cantidad: 1, producto: producto});
         } else {
@@ -120,6 +124,7 @@ class Interfaz {
                 <a href="../views/dresses.html"><button class="button__emptyCart">Return to Shop</button></a>
             </div>`;
             document.querySelector(".cart__container--price").style.display = "none";
+            $(".cart__container").css("align-items", "center");
         } else {
             carrito.forEach((item) => {
                 let precioProductoIndividual = item.cantidad * item.producto.precio;
@@ -138,7 +143,14 @@ class Interfaz {
             });
             let subtotal = document.querySelector(".cart__container--price")
             subtotal.style.display = "block";
-            subtotal.innerHTML = `<p class="subtotal"></p></p>
+            subtotal.innerHTML = `<p class="subtotal"></p>
+            <div class="subtotal__coupon">
+                <form name="formCupon" id="form">
+                    <input type="text" id="coupon" name="coupon" placeholder=" COUPON CODE" minlength="4" maxlength="10"></input>
+                    <input type="submit" id="submit" name="submit" value="SUBMIT"></input>
+                    <p id="form__alert">Your code is not valid!</p>
+                </form>
+            </div>
             <button class="button__checkout">Checkout</button>`
 
         }
@@ -166,7 +178,6 @@ class Filtro {
 
     static filtro(category) {
         let nuevoArray = productos.filter(vestido => vestido.categorias.includes(category));
-        console.log(nuevoArray);
         Interfaz.mostrarTodosLosVestidos(nuevoArray);
     }
 
@@ -174,5 +185,28 @@ class Filtro {
         if(variable.style.display === "block") {
             variable.style.display = "none";}      
           else {variable.style.display = "block";}
-      }
+    }
+
+    // ----- Filtros de Accesorios
+
+    static highLowAccesorios() {
+        let nuevoArray = [];
+        nuevoArray = Object.assign(nuevoArray, accesorios);
+        nuevoArray.sort(function (a, b) {
+            return b.precio - a.precio;});
+        Interfaz.mostrarTodosLosAccesorios(nuevoArray);    
+    }
+
+    static lowHighAccesorios() {
+        let nuevoArray = [];
+        nuevoArray = Object.assign(nuevoArray, accesorios);
+        nuevoArray.sort(function (a, b) {
+            return a.precio - b.precio;});
+        Interfaz.mostrarTodosLosAccesorios(nuevoArray);  
+    }
+
+    static filtroAccesorios(category) {
+        let nuevoArray = accesorios.filter(accesorio => accesorio.categorias.includes(category));
+        Interfaz.mostrarTodosLosAccesorios(nuevoArray);
+    }
 }
