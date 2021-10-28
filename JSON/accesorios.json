@@ -1,0 +1,226 @@
+
+[{
+    "id": 101,
+    "nombre": "Crystal Earrings",
+    "precio": 550,
+    "descripcion": "Long earrings with tiny crystals",
+    "img": "../assets/img/a1.jpg",
+    "categorias": ["earrings", "multicolor", "gold", "metal", "gemstone"]
+},
+{
+    "id": 102,
+    "nombre": "Charming Necklace",
+    "precio": 400,
+    "descripcion": "Double long gold necklace",
+    "img": "../assets/img/a2.jpg",
+    "categorias": ["necklace", "gold", "metal"]
+},
+{
+    "id": 103,
+    "nombre": "Mila Set",
+    "precio": 590,
+    "descripcion": "Set of seven golden rings",
+    "img": "../assets/img/a3.jpg",
+    "categorias": ["set", "ring", "gold", "red", "metal", "gemstone"]
+},
+{
+    "id": 104,
+    "nombre": "Stary Night Necklace",
+    "precio": 450,
+    "descripcion": "Golden necklace with stars pendants",
+    "img": "../assets/img/a4.jpg",
+    "categorias": ["necklace", "gold", "metal"]
+},
+{
+    "id": 105,
+    "nombre": "Rose Chocker",
+    "precio": 530,
+    "descripcion": "Chocker with pink roses",
+    "img": "../assets/img/a5.jpg",
+    "categorias": ["necklace", "pink", "other"]
+},
+{
+    "id": 106,
+    "nombre": "Claire Set",
+    "precio": 600,
+    "descripcion": "Golden set of earrings and chain",
+    "img": "../assets/img/a6.jpg",
+    "categorias": ["set", "gold", "metal"]
+},
+{
+    "id": 107,
+    "nombre": "Samantha Earrings",
+    "precio": 570,
+    "descripcion": "Color squared earrings",
+    "img": "../assets/img/a7.jpg",
+    "categorias": ["earrings", "multicolor", "other"]
+},
+{
+    "id": 108,
+    "nombre": "Air Ring",
+    "precio": 320,
+    "descripcion": "Ring with three pearls",
+    "img": "../assets/img/a8.jpg",
+    "categorias": ["ring", "white", "metal", "pearl", "silver"]
+},
+{
+    "id": 109,
+    "nombre": "Life Necklace",
+    "precio": 400,
+    "descripcion": "Long golden necklace with flowery pendants",
+    "img": "../assets/img/a9.jpg",
+    "categorias": ["necklace", "gold", "metal"]
+},
+{
+    "id": 110,
+    "nombre": "Goddes Earrings",
+    "precio": 600,
+    "descripcion": "Circular white earrings",
+    "img": "../assets/img/a10.jpg",
+    "categorias": ["earrings", "white", "other"]
+},
+{
+    "id": 111,
+    "nombre": "Life Earrings",
+    "precio": 320,
+    "descripcion": "Circular earrings with a pearl",
+    "img": "../assets/img/a11.jpg",
+    "categorias": ["earrings", "pearl", "metal", "pearl", "gold"]
+},
+{
+    "id": 112,
+    "nombre": "Pearl Necklace",
+    "precio": 540,
+    "descripcion": "Long necklace with pearls",
+    "img": "../assets/img/a12.jpg",
+    "categorias": ["necklace", "pearl", "white"]
+},
+{
+    "id": 113,
+    "nombre": "Power Set",
+    "precio": 640,
+    "descripcion": "Set of two necklaces and four rings",
+    "img": "../assets/img/a13.jpg",
+    "categorias": ["set", "silver", "metal", "gemstone", "multicolor"]
+},
+{
+    "id": 114,
+    "nombre": "Dara Set",
+    "precio": 610,
+    "descripcion": "Set of necklace with a black crystal and matching ring",
+    "img": "../assets/img/a14.jpg",
+    "categorias": ["set", "metal", "gemstone", "multicolor", "silver"]
+},
+{
+    "id": 115,
+    "nombre": "Liberty Set",
+    "precio": 590,
+    "descripcion": "Set of par of earrings and ring",
+    "img": "../assets/img/a15.jpg",
+    "categorias": ["set", "gold", "metal"]
+},
+{
+    "id": 116,
+    "nombre": "Roma Bracelet",
+    "precio": 530,
+    "descripcion": "Pink quartz bracelet",
+    "img": "../assets/img/a16.jpg",
+    "categorias": ["bracelet", "pink", "gemstone"]
+},
+{
+    "id": 117,
+    "nombre": "Betty Set",
+    "precio": 600,
+    "descripcion": "Set of silver ring earrings and a chain",
+    "img": "../assets/img/a17.jpg",
+    "categorias": ["set", "silver", "metal"]
+},
+{
+    "id": 118,
+    "nombre": "Bear Set",
+    "precio": 590,
+    "descripcion": "Set of bear earrings and ring",
+    "img": "../assets/img/a18.jpg",
+    "categorias": ["set", "silver", "metal"]
+},
+{
+    "id": 119,
+    "nombre": "Oval Earrings",
+    "precio": 600,
+    "descripcion": "Oval silver earrings",
+    "img": "../assets/img/a19.jpg",
+    "categorias": ["earrings", "silver", "metal"]
+},
+{
+    "id": 120,
+    "nombre": "Lara Earrings",
+    "precio": 450,
+    "descripcion": "Woolen earrings",
+    "img": "../assets/img/a20.jpg",
+    "categorias": ["earrings", "pink", "other"]
+},
+{
+    "id": 121,
+    "nombre": "Madam Set",
+    "precio": 660,
+    "descripcion": "Set of crystal bracelet and ring",
+    "img": "../assets/img/a21.jpg",
+    "categorias": ["set", "silver", "white", "gemstone"]
+},
+{
+    "id": 122,
+    "nombre": "Emma Necklace",
+    "precio": 580,
+    "descripcion": "Yellow quartz pendant",
+    "img": "../assets/img/a22.jpg",
+    "categorias": ["necklace", "gold", "metal", "gemstone"]
+},
+{
+    "id": 123,
+    "nombre": "Lord Earrings",
+    "precio": 500,
+    "descripcion": "Golden earrings with a pearl",
+    "img": "../assets/img/a23.jpg",
+    "categorias": ["earrings", "gold", "metal", "pearl"]
+},
+{
+    "id": 124,
+    "nombre": "Coper Set",
+    "precio": 650,
+    "descripcion": "Set of three golden chains and yellow quartz stone earrings",
+    "img": "../assets/img/a24.jpg",
+    "categorias": ["set", "gold", "metal", "gemstone"]
+},
+{
+    "id": 125,
+    "nombre": "Loveless Earrings",
+    "precio": 550,
+    "descripcion": "Amatist earrings",
+    "img": "../assets/img/a25.jpg",
+    "categorias": ["earrings", "gold", "red", "metal", "gemstone"]
+},
+{
+    "id": 126,
+    "nombre": "Era Set",
+    "precio": 650,
+    "descripcion": "Set of three golden rings, a pendant and a pair of earrings",
+    "img": "../assets/img/a26.jpg",
+    "categorias": ["set", "gold", "white", "metal", "gemstone"]
+},
+{
+    "id": 127,
+    "nombre": "Loveless Bracelet",
+    "precio": 500,
+    "descripcion": "Amatist Ring",
+    "img": "../assets/img/a27.jpg",
+    "categorias": ["bracelet", "gold", "red", "metal", "gemstone"]
+},
+{
+    "id": 128,
+    "nombre": "Force Set",
+    "precio": 540,
+    "descripcion": "Set of a silver ring and a matching bracelet",
+    "img": "../assets/img/a28.jpg",
+    "categorias": ["set", "silver", "white", "metal", "gemstone"]
+}
+]

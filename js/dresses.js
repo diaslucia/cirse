@@ -60,6 +60,15 @@ document.getElementById("dresses__container").addEventListener("click", (e) => {
 });
 
 // ----- Quiero mostrar todos mis productos cuando abra la página
-Interfaz.mostrarTodosLosVestidos(productos);
-Interfaz.numeroCarrito();
+const URL = "../json/productos.json";
+let productos;
 
+jQuery(() => {
+  $.get(URL, (respuesta, estado) => {
+    if (estado === "success") {
+      productos = respuesta;
+      Interfaz.mostrarTodosLosVestidos(productos);
+      Interfaz.numeroCarrito();
+      }
+    });
+});

@@ -63,6 +63,16 @@ document.getElementById("accesories__container").addEventListener("click", (e) =
 });
 
 // ----- Quiero mostrar todos mis productos cuando abra la página
-Interfaz.mostrarTodosLosAccesorios(accesorios);
-Interfaz.numeroCarrito();
+const URL = "../json/accesorios.json";
+let accesorios;
+
+jQuery(() => {
+  $.get(URL, (respuesta, estado) => {
+    if (estado === "success") {
+      accesorios = respuesta;
+      Interfaz.mostrarTodosLosAccesorios(accesorios);
+      Interfaz.numeroCarrito();
+      }
+    });
+});
 

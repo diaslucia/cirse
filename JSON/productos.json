@@ -1,0 +1,162 @@
+[{
+    "id": 1,
+    "nombre": "Folk Dress",
+    "precio": 2000,
+    "descripcion": "Button up skater dress",
+    "img": "../assets/img/dresses (1).jpg",
+    "categorias": ["long", "scoop neck", "short sleeve"]
+},
+{
+    "id": 2,
+    "nombre": "Cloud Dress",
+    "precio": 2200,
+    "descripcion": "A line, long sleeves dress",
+    "img": "../assets/img/dresses (2).jpg",
+    "categorias": ["above knee", "square neck", "long sleeve"]
+},
+{
+    "id": 3,
+    "nombre": "Heaven Dress",
+    "precio": 3150,
+    "descripcion": "Cotton dress with puffy sleeves",
+    "img": "../assets/img/dresses (3).jpg",
+    "categorias": ["long", "square neck", "long sleeve"]
+},
+{
+    "id": 4,
+    "nombre": "Sunny Dress",
+    "precio": 2900,
+    "descripcion": "Pink and white gingham dress",
+    "img": "../assets/img/dresses (4).jpg",
+    "categorias": ["midi", "square neck", "long sleeve"]
+},
+{
+    "id": 5,
+    "nombre": "Sweet Dress",
+    "precio": 2800,
+    "descripcion": "Flowery dress with lace",
+    "img": "../assets/img/dresses (5).jpg",
+    "categorias": ["above knee", "square neck", "short sleeve"]
+},
+{
+    "id": 6,
+    "nombre": "Victoria Dress",
+    "precio": 3000,
+    "descripcion": "Long patterned dress",
+    "img": "../assets/img/dresses (6).jpg",
+    "categorias": ["midi", "v neck", "short sleeve"]
+},
+{
+    "id": 7,
+    "nombre": "Alex Dress",
+    "precio": 2000,
+    "descripcion": "White long dress with red flowers",
+    "img": "../assets/img/dresses (7).jpg",
+    "categorias": ["midi", "square neck", "long sleeve"]
+},
+{
+    "id": 8,
+    "nombre": "Leaf Dress",
+    "precio": 1800,
+    "descripcion": "Green slip dress",
+    "img": "../assets/img/dresses (8).jpg",
+    "categorias": ["above knee", "v neck", "sleeveless"]
+},
+{
+    "id": 9,
+    "nombre": "Header Dress",
+    "precio": 2100,
+    "descripcion": "Light empire II dress",
+    "img": "../assets/img/dresses (9).jpg",
+    "categorias": ["mini", "v neck", "sleeveless"]
+},
+{
+    "id": 10,
+    "nombre": "Telma Dress",
+    "precio": 2250,
+    "descripcion": "White button up dress",
+    "img": "../assets/img/dresses (10).jpg",
+    "categorias": ["midi", "square neck", "sleeveless"]
+},
+{
+    "id": 11,
+    "nombre": "Rocky Dress",
+    "precio": 2500,
+    "descripcion": "Button up dress with short slevees",
+    "img": "../assets/img/dresses (11).jpg",
+    "categorias": ["mini", "v neck", "short sleeve"]
+},
+{
+    "id": 12,
+    "nombre": "Rebecca Dress",
+    "precio": 2800,
+    "descripcion": "Dress with white little hearts",
+    "img": "../assets/img/dresses (12).jpg",
+    "categorias": ["midi", "square neck", "long sleeve"]
+},
+{
+    "id": 13,
+    "nombre": "Camilla Dress",
+    "precio": 2600,
+    "descripcion": "Light blue polka dot dress",
+    "img": "../assets/img/dresses (13).jpg",
+    "categorias": ["long", "v neck", "short sleeve"]
+},
+{
+    "id": 14,
+    "nombre": "Loner Dress",
+    "precio": 3200,
+    "descripcion": "Button up long dress",
+    "img": "../assets/img/dresses (14).jpg",
+    "categorias": ["midi", "v neck", "short sleeve"]
+},
+{
+    "id": 15,
+    "nombre": "River Dress",
+    "precio": 3300,
+    "descripcion": "Pink 3/4 slevees dress",
+    "img": "../assets/img/dresses (15).jpg",
+    "categorias": ["midi", "square neck", "3/4 sleeve"]
+},
+{
+    "id": 16,
+    "nombre": "Soul Dress",
+    "precio": 3350,
+    "descripcion": "Bow neck dress with purple details",
+    "img": "../assets/img/dresses (16).jpg",
+    "categorias": ["long", "collared", "long sleeve"]
+},
+{
+    "id": 17,
+    "nombre": "Rose Dress",
+    "precio": 3100,
+    "descripcion": "Peter pan collar dress",
+    "img": "../assets/img/dresses (17).jpg",
+    "categorias": ["mini", "collared", "long sleeve"]
+},
+{
+    "id": 18,
+    "nombre": "Sandy Dress",
+    "precio": 3000,
+    "descripcion": "White dress with borwn flowers",
+    "img": "../assets/img/dresses (18).jpg",
+    "categorias": ["midi", "v neck", "short sleeve"]
+},
+{
+    "id": 19,
+    "nombre": "Mary Dress",
+    "precio": 3500,
+    "descripcion": "Poet collar long dress",
+    "img": "../assets/img/dresses (19).jpg",
+    "categorias": ["long", "collared", "long sleeve"]
+},
+{
+    "id": 20,
+    "nombre": "Bonnie Dress",
+    "precio": 3300,
+    "descripcion": "Peter pan collar with puffy sleeves",
+    "img": "../assets/img/dresses (20).jpg",
+    "categorias": ["midi", "collared", "long sleeve"]
+}
+]
+

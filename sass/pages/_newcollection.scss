@@ -6,3 +6,98 @@
 body {
     background-color: $base-color;
 }
+
+.newcollection__container {
+    @include flex(column, center);
+    .newcollection__titles {
+        @include flex(column, center);
+        margin: 4rem;
+        .title {
+            text-align: center;
+            letter-spacing: 1rem;
+            color: $beige;
+            @include serif(3.5rem);
+            transition: 5s;
+        }
+        .subtitle {
+            @include serif(2rem);
+            color: $secondary-color;
+            margin-bottom: 1rem;
+            letter-spacing: .3rem;
+            display:none;
+        }
+    }
+    .newcollection__slider {
+        @include flex(row, center);
+        margin: 1rem;
+        overflow: hidden;
+        position: relative;
+        .slider {
+            display: none;
+            img {
+                width: 300px;
+                margin: 2rem;
+                transition: 2s;
+            }
+        }
+        .newcollection__arrows {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            button {
+                cursor: pointer;
+                @include font(2.5rem);
+                border: 0rem;
+                background-color: $base-color;
+                color: $secondary-color;
+                margin:.5rem 0rem 2rem 0rem;
+                }
+        }
+        .showSlide {
+            animation: vanish 2s;
+          }}
+    }
+    .poem {
+        padding: 4rem;
+        @include serif(1.4rem);
+        color: $secondary-color;
+        text-align: center;
+        font-style: italic;
+    }
+
+}
+
+@keyframes vanish {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+
+.poem {
+    padding: 4rem;
+    @include serif(1.4rem);
+    color: $secondary-color;
+    text-align: center;
+    font-style: italic;
+}
+
+.newcollection__img{
+    width: 100%;
+    filter: saturate(.3);
+    transition: filter 2s;
+}
+
+
+.banner {
+    margin: 1rem 0rem;
+    @include flex(row, center);
+    .banner__img{
+        width:350px;
+        height: auto;
+    }
+}

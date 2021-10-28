@@ -1179,6 +1179,94 @@ html {
 body {
   background-color: #f9f9f9; }
 
+.newcollection__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .newcollection__container .newcollection__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem; }
+    .newcollection__container .newcollection__titles .title {
+      text-align: center;
+      letter-spacing: 1rem;
+      color: #eee7d6;
+      font-size: 3.5rem;
+      font-family: Lora, serif;
+      transition: 5s; }
+    .newcollection__container .newcollection__titles .subtitle {
+      font-size: 2rem;
+      font-family: Lora, serif;
+      color: #c2a893;
+      margin-bottom: 1rem;
+      letter-spacing: .3rem;
+      display: none; }
+  .newcollection__container .newcollection__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative; }
+    .newcollection__container .newcollection__slider .slider {
+      display: none; }
+      .newcollection__container .newcollection__slider .slider img {
+        width: 300px;
+        margin: 2rem; }
+    .newcollection__container .newcollection__slider .newcollection__arrows {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .newcollection__container .newcollection__slider .newcollection__arrows button {
+        cursor: pointer;
+        font-size: 2.5rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        border: 0rem;
+        background-color: #f9f9f9;
+        color: #c2a893;
+        margin: .5rem 0rem 2rem 0rem; }
+    .newcollection__container .newcollection__slider .showSlide {
+      display: block; }
+    .newcollection__container .newcollection__slider .hideSlide {
+      display: none; }
+  .newcollection__container .poem {
+    padding: 4rem;
+    font-size: 1.4rem;
+    font-family: Lora, serif;
+    color: #c2a893;
+    text-align: center;
+    font-style: italic; }
+
+.poem {
+  padding: 4rem;
+  font-size: 1.4rem;
+  font-family: Lora, serif;
+  color: #c2a893;
+  text-align: center;
+  font-style: italic; }
+
+.newcollection__img {
+  width: 100%;
+  filter: saturate(0.3);
+  transition: filter 2s; }
+
+.banner {
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .banner .banner__img {
+    width: 350px;
+    height: auto; }
+
 * {
   margin: 0rem;
   padding: 0rem;
