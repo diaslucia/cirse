@@ -56,9 +56,7 @@ body {
                 margin:.5rem 0rem 2rem 0rem;
                 }
         }
-        .showSlide {
-            animation: vanish 2s;
-          }}
+        .showSlide {display:block;}
     }
     .poem {
         padding: 4rem;
@@ -69,14 +67,6 @@ body {
     }
 
 }
-
-@keyframes vanish {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
 
 .poem {
     padding: 4rem;
@@ -90,6 +80,7 @@ body {
     width: 100%;
     filter: saturate(.3);
     transition: filter 2s;
+    margin-bottom: 4rem;
 }
 
 
@@ -97,7 +88,8 @@ body {
     margin: 1rem 0rem;
     @include flex(row, center);
     .banner__img{
-        width:350px;
+        width:250px;
         height: auto;
+        margin: 1rem;
     }
 }

@@ -28,7 +28,7 @@ document.getElementById("dropdown").addEventListener("click", (e) => {
   const filterByMaterial = document.querySelector("#filter__material");
   if (e.target.classList.contains("filter__materialButton")) {Filtro.display(filterByMaterial);}
 
-  if (e.target.classList.contains("clear")) {Interfaz.mostrarTodosLosVestidos(productos);Filtro.display(filterByDropdown);}
+  if (e.target.classList.contains("clear")) {Interfaz.mostrarTodosLosAccesorios(accesorios);Filtro.display(filterByDropdown);}
   if (e.target.classList.contains("necklace")) {Filtro.filtroAccesorios("necklace");Filtro.display(filterByDropdown);}
   if (e.target.classList.contains("bracelet")) {Filtro.filtroAccesorios("bracelet");Filtro.display(filterByDropdown);}
   if (e.target.classList.contains("earrings")) {Filtro.filtroAccesorios("earrings");Filtro.display(filterByDropdown);}

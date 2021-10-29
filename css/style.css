@@ -1216,7 +1216,8 @@ body {
       display: none; }
       .newcollection__container .newcollection__slider .slider img {
         width: 300px;
-        margin: 2rem; }
+        margin: 2rem;
+        transition: 2s; }
     .newcollection__container .newcollection__slider .newcollection__arrows {
       display: flex;
       width: 100%;
@@ -1234,8 +1235,6 @@ body {
         margin: .5rem 0rem 2rem 0rem; }
     .newcollection__container .newcollection__slider .showSlide {
       display: block; }
-    .newcollection__container .newcollection__slider .hideSlide {
-      display: none; }
   .newcollection__container .poem {
     padding: 4rem;
     font-size: 1.4rem;
@@ -1255,7 +1254,8 @@ body {
 .newcollection__img {
   width: 100%;
   filter: saturate(0.3);
-  transition: filter 2s; }
+  transition: filter 2s;
+  margin-bottom: 4rem; }
 
 .banner {
   margin: 1rem 0rem;
@@ -1264,8 +1264,9 @@ body {
   justify-content: center;
   align-items: center; }
   .banner .banner__img {
-    width: 350px;
-    height: auto; }
+    width: 250px;
+    height: auto;
+    margin: 1rem; }
 
 * {
   margin: 0rem;
