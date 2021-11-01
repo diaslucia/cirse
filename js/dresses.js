@@ -60,7 +60,7 @@ document.getElementById("dresses__container").addEventListener("click", (e) => {
 });
 
 // ----- Quiero mostrar todos mis productos cuando abra la página
-const URL = "../json/productos.json";
+const URL = "../JSON/productos.json";
 let productos;
 
 jQuery(() => {
