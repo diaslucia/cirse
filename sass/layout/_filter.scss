@@ -86,3 +86,28 @@
         };
 }
 }
+
+@media only screen and (max-width: 768px) {
+
+
+    .filter__container {
+        @include flex(row, flex-end);
+        .dropdown {
+            margin: 0rem;
+            .button__sortby, .button__filterby {
+                @include font (1.2rem);
+                padding: 0rem 3rem;
+            }
+            .dropdownmenu__sortby {width: 150px;}
+            .dropdownmenu__filterby {
+                @include font (1.2rem);
+                width: 130px;
+                ul {
+                    li {padding: .5rem 4rem;}
+                    #filter__clear {padding: .5rem;}
+                    #filter__subtitles {padding: .5rem;}
+                }
+            };
+    }
+    }
+}

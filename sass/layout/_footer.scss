@@ -109,7 +109,7 @@
     
 .footer {
     background-color: $secondary-color;
-    margin-top:6rem;
+    margin-top:1rem;
     padding: 1rem 0rem;
     .footer__container{
         @include flex(column, space-around);
@@ -121,7 +121,7 @@
 .footer__div {
     @include flex(row,flex-start);
     .footer__logo {
-        @include font (2rem);
+        @include font (2.2rem);
         margin: auto;
     }
 }

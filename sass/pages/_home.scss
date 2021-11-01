@@ -323,6 +323,7 @@ body {
   h1 {@include serif(2.5rem);}
 }
 .carousel {
+  margin: 0rem;
   .carousel__item {
     display: none;
     .cards{

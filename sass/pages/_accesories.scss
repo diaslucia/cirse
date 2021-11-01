@@ -40,3 +40,27 @@ body {
         };
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    .accesories__container {
+        @include flex(row, center);
+        align-content: flex-start;
+        flex-wrap: wrap;
+        .accesories__div {
+            margin: 1rem;
+            img {
+                width: 10rem;
+                margin: .5rem;
+            }
+            .accesories__title {@include font(1.2rem);  margin: .2rem 0rem;}
+            .accesories__price {@include font(1rem);}
+            button {
+                @include font(1.3rem);
+                padding: .2rem;
+                margin: 0rem;
+            };
+        }
+    }
+
+}

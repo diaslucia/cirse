@@ -41,3 +41,26 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px) {
+
+    .dresses__container {
+        @include flex(row, center);
+        align-content: flex-start;
+        flex-wrap: wrap;
+        .dresses__div {
+            margin: 1rem;
+            img {
+                width: 10rem;
+                margin: .5rem;
+            }
+            .dresses__title {@include font(1.3rem);  margin: .2rem 0rem;}
+            .dresses__price {@include font(1rem);}
+            button {
+                @include font(1.3rem);
+                padding: .2rem;
+                margin: 0rem;
+            };
+        }
+    }
+
+}
