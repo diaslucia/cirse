@@ -246,19 +246,26 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+  .carousel {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+}
+
 /* Coupon */
 .coupon {width: 80%;padding: 1.5rem .5rem .5rem .5rem;}
 
-/* New In */
+/* New Collection */
 .new__container {
   margin: 1rem 0rem;
   .new__info{
+    margin-bottom: 2rem;
       h1 {
-          letter-spacing: .3rem;
-          @include serif(1.5rem);
+          letter-spacing: .8rem;
+          @include serif(2rem);
       }
       h2 {
-          @include serif(1rem);
+          @include serif(1.3rem);
       }
       button {
           position: relative;
@@ -268,22 +275,82 @@ body {
           letter-spacing: .3rem;
       }
   }
-  
-  .new__img1 {
-      width: 100%;
-      margin: 3rem 0rem 1rem 0rem;
-      box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
-  }
-  .new__img2 {
-      width: 100%;
-      margin: 9rem 0rem 1rem 0rem;
-      box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
-  }
-  .new__img3 {
-      width: 100%;
-      margin: 15rem 0rem 3rem 0rem;
-      box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.15);
-  }
-
+  .new__img1 {width: 100%;margin: 3rem 0rem 1rem 0rem;}
+  .new__img2 {width: 100%;margin: 9rem 0rem 1rem 0rem;}
+  .new__img3 {width: 100%;margin: 15rem 0rem 3rem 0rem;}
 }
+
+/* New In */
+
+.newin__secondary:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(58, 58, 58, 0.50);}
+
+.newin {
+  .newin__main {
+    img {
+      height: 350px;
+    }
+  }
+  .newin__secondary {
+    height: auto;
+    margin: 2rem;
+    .newin__info {
+      margin-top: 3rem;
+      h3{@include serif(2.5rem); letter-spacing: 1.5rem;}
+      p {@include serif(1.3rem);}}
+    .newin__img {
+      @include flex(column, space-around);
+      img {
+        width: 100px;
+        margin: .5rem 0rem;
+      }
+      #newin__img--none {display:none}
+      }
+  }
+}
+
+
+/* Sliders */
+
+.cards__title {
+  margin: 1rem 0rem;
+  h1 {@include serif(2.5rem);}
+}
+.carousel {
+  .carousel__item {
+    display: none;
+    .cards{
+      @include flex(column, center);
+      margin: 0rem;
+      img{
+        width: 7rem;
+        margin: .2rem;
+        height: auto;
+      }
+      p {display:none;}
+      .cards__price {display:none;}
+      .carousel__button {display:none;}
+    }
+  }
+  .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    @include flex(row, center);
+  }
+  .carousel__actions {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    button {@include font(2rem);}
+    #carousel__button--prev {margin-left: 5px;}
+    #carousel__button--next {margin-right: 5px;}
+  }
+}
+
 }

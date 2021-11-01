@@ -79,3 +79,29 @@ nav {
     }
    
 }
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        width: 99%;
+        font-size: 20px;
+        .nav__first {
+            .nav__logo{.nav__logoprincipal {@include font (3rem);}}
+        }
+        .nav__login--container{
+            ul{.goback {
+                    @include font (2rem);
+                    position: absolute;
+                    z-index: 1;
+                    top: 15px;
+                    left: 30px; 
+                }}
+        }
+        .nav__second {
+            padding: 1.5rem 0rem 1rem 0rem;
+            ul {@include font (1.2rem);letter-spacing: 0px;}
+        }
+       
+    }
+
+}
