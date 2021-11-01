@@ -63,7 +63,7 @@ document.getElementById("accesories__container").addEventListener("click", (e) =
 });
 
 // ----- Quiero mostrar todos mis productos cuando abra la página
-const URL = "../json/accesorios.json";
+const URL = "../JSON/accesorios.json";
 let accesorios;
 
 jQuery(() => {
