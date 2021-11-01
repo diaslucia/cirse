@@ -151,7 +151,7 @@ class Interfaz {
                     <p id="form__alert">Your code is not valid!</p>
                 </form>
             </div>
-            <button class="button__checkout">Checkout</button>`
+            <a href="../views/checkout.html"><button class="button__checkout">Checkout</button></a>`
 
         }
     };

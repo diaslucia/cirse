@@ -1,0 +1,109 @@
+@import "../main/color";
+@import "../main/flex";
+@import "../main/fonts";
+@import "../main/general";
+
+
+.checkout__container {
+    background-color: $dark;
+    width: 100%;
+    height: 500px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $secondary-color;
+    .container {
+        width: 65%;
+        padding: 5% 10%;
+        form {
+            width: 100%;
+            h1 {align-self: center; 
+                color:$base-color;
+                @include font(2rem);
+                margin-top: 1rem;
+            }
+            input {
+                width: 100%;
+                min-height: 25px;
+                border: 0;
+                font-size: 1rem;
+                letter-spacing: .15rem;
+                color: $dark;
+                border-radius: 4px;
+            }
+            label {
+                text-transform: uppercase;
+                @include font(1.3rem);
+                letter-spacing: 2px;
+                color: $base-color;
+            }
+        }
+    }
+
+}
+
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+    div {
+        width: 45%;
+    }
+}
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+    button {
+        @include font(1.5rem);
+        border: 0rem;
+        border-radius: 5%;
+        background-color: $beige;
+        color: $secondary-color;
+        padding: .5rem 4rem;
+        transition: 1s;
+        margin:.1rem 0rem 1.6rem 0rem;
+        &:hover{color: $dark;
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, .2);
+        } &:active{
+            box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52);
+        }
+    };
+    a { 
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover{color: $dark;} 
+    }
+}

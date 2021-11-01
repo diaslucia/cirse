@@ -91,5 +91,59 @@ body {
         width:250px;
         height: auto;
         margin: 1rem;
+        transition: 2s;
+        filter: grayscale(40%);
+        &:hover {
+            transform: scale(1.03,1.03);
+            cursor: pointer;
+            filter: grayscale(0%);
+        }
     }
+}
+
+.newcollection__last {
+    @include flex(row, center);
+    margin-top: 2rem;;
+    .newcollection__poems {
+        @include flex(column, center);
+        background-color: #f3f3ef;
+        box-shadow:  5px 5px 0px #f1f1ed,
+        -5px -5px 0px #f5f5f1;
+        margin: 3rem;
+        padding: 5rem;
+        .poem1 {
+            @include serif(1.4rem);
+            color: $secondary-color;
+            font-style: italic;
+        }  
+        .poem2 {
+            @include serif(2rem);
+            color: $dark;
+            letter-spacing: .5rem;
+            text-align: center;
+            font-style: italic;
+            margin-left: 5rem;
+            margin-bottom: 0rem;
+        }
+        .poem3 {
+            @include serif(2rem);
+            color: $secondary-color;
+            letter-spacing: .5rem;
+            text-align: center;
+            font-style: italic;
+            margin-left: 10rem;
+            margin-bottom: 0rem;
+        }
+        .poem4 {
+            @include serif(1.4rem);
+            color: $secondary-color;
+            font-style: italic;
+            margin-top: 3rem;
+        }
+    }
+    .lastimg {
+        width: 500px;
+        padding: 2rem;
+    }
+    
 }

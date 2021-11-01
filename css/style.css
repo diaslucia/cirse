@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo");
 * {
   margin: 0rem;
   padding: 0rem;
@@ -155,13 +156,13 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    nav .nav__login--container ul .nav__login {
+    nav .nav__login--container ul .goback {
       font-size: 2rem;
       font-family: Poppins, Arial, Helvetica, sans-serif;
       position: absolute;
       z-index: 1;
       top: 15px;
-      right: 80px; }
+      left: 30px; }
     nav .nav__login--container ul .circle {
       background-color: #c2a893;
       color: #f9f9f9;
@@ -455,6 +456,41 @@ body {
     opacity: 1;
     transform: opacity linear; } }
 
+@media only screen and (max-width: 768px) {
+  /* Coupon */
+  .coupon {
+    width: 80%;
+    padding: 1.5rem .5rem .5rem .5rem; }
+  /* New In */
+  .new__container {
+    margin: 1rem 0rem; }
+    .new__container .new__info h1 {
+      letter-spacing: .3rem;
+      font-size: 1.5rem;
+      font-family: Lora, serif; }
+    .new__container .new__info h2 {
+      font-size: 1rem;
+      font-family: Lora, serif; }
+    .new__container .new__info button {
+      position: relative;
+      font-size: 0.8rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      border-radius: 2%;
+      padding: .5rem 2rem;
+      letter-spacing: .3rem; }
+    .new__container .new__img1 {
+      width: 100%;
+      margin: 3rem 0rem 1rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); }
+    .new__container .new__img2 {
+      width: 100%;
+      margin: 9rem 0rem 1rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); }
+    .new__container .new__img3 {
+      width: 100%;
+      margin: 15rem 0rem 3rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); } }
+
 * {
   margin: 0rem;
   padding: 0rem;
@@ -691,6 +727,41 @@ body {
   100% {
     opacity: 1;
     transform: opacity linear; } }
+
+@media only screen and (max-width: 768px) {
+  /* Coupon */
+  .coupon {
+    width: 80%;
+    padding: 1.5rem .5rem .5rem .5rem; }
+  /* New In */
+  .new__container {
+    margin: 1rem 0rem; }
+    .new__container .new__info h1 {
+      letter-spacing: .3rem;
+      font-size: 1.5rem;
+      font-family: Lora, serif; }
+    .new__container .new__info h2 {
+      font-size: 1rem;
+      font-family: Lora, serif; }
+    .new__container .new__info button {
+      position: relative;
+      font-size: 0.8rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      border-radius: 2%;
+      padding: .5rem 2rem;
+      letter-spacing: .3rem; }
+    .new__container .new__img1 {
+      width: 100%;
+      margin: 3rem 0rem 1rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); }
+    .new__container .new__img2 {
+      width: 100%;
+      margin: 9rem 0rem 1rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); }
+    .new__container .new__img3 {
+      width: 100%;
+      margin: 15rem 0rem 3rem 0rem;
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.15); } }
 
 * {
   margin: 0rem;
@@ -1266,7 +1337,158 @@ body {
   .banner .banner__img {
     width: 250px;
     height: auto;
-    margin: 1rem; }
+    margin: 1rem;
+    transition: 2s;
+    filter: grayscale(40%); }
+    .banner .banner__img:hover {
+      transform: scale(1.03, 1.03);
+      cursor: pointer;
+      filter: grayscale(0%); }
+
+.newcollection__last {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; }
+  .newcollection__last .newcollection__poems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3ef;
+    box-shadow: 5px 5px 0px #f1f1ed, -5px -5px 0px #f5f5f1;
+    margin: 3rem;
+    padding: 5rem; }
+    .newcollection__last .newcollection__poems .poem1 {
+      font-size: 1.4rem;
+      font-family: Lora, serif;
+      color: #c2a893;
+      font-style: italic; }
+    .newcollection__last .newcollection__poems .poem2 {
+      font-size: 2rem;
+      font-family: Lora, serif;
+      color: #7d7772;
+      letter-spacing: .5rem;
+      text-align: center;
+      font-style: italic;
+      margin-left: 5rem;
+      margin-bottom: 0rem; }
+    .newcollection__last .newcollection__poems .poem3 {
+      font-size: 2rem;
+      font-family: Lora, serif;
+      color: #c2a893;
+      letter-spacing: .5rem;
+      text-align: center;
+      font-style: italic;
+      margin-left: 10rem;
+      margin-bottom: 0rem; }
+    .newcollection__last .newcollection__poems .poem4 {
+      font-size: 1.4rem;
+      font-family: Lora, serif;
+      color: #c2a893;
+      font-style: italic;
+      margin-top: 3rem; }
+  .newcollection__last .lastimg {
+    width: 500px;
+    padding: 2rem; }
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  list-style-type: none; }
+
+html {
+  font-size: 62.5%; }
+
+.row .col .container-fluid {
+  margin: 0rem !important;
+  padding: 0rem !important; }
+
+.checkout__container {
+  background-color: #7d7772;
+  width: 100%;
+  height: 500px; }
+
+body {
+  display: flex;
+  justify-content: center; }
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #c2a893; }
+  .wrapper .container {
+    width: 65%;
+    padding: 5% 10%; }
+    .wrapper .container form {
+      width: 100%; }
+      .wrapper .container form h1 {
+        align-self: center;
+        color: #f9f9f9;
+        font-size: 2rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        margin-top: 1rem; }
+      .wrapper .container form input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        color: #7d7772;
+        border-radius: 4px; }
+      .wrapper .container form label {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        color: #f9f9f9; }
+
+.name {
+  justify-content: space-between;
+  display: flex;
+  width: 100%; }
+  .name div {
+    width: 45%; }
+
+.address-info {
+  display: flex;
+  justify-content: space-between; }
+  .address-info div {
+    width: 30%; }
+
+.cc-info {
+  display: flex;
+  justify-content: space-between; }
+  .cc-info div {
+    width: 45%; }
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 2rem; }
+  .btns button {
+    font-size: 1.5rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    border: 0rem;
+    border-radius: 5%;
+    background-color: #eee7d6;
+    color: #c2a893;
+    padding: .5rem 4rem;
+    transition: 1s;
+    margin: .1rem 0rem 1.6rem 0rem; }
+    .btns button:hover {
+      color: #7d7772;
+      box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2); }
+    .btns button:active {
+      box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
+  .btns a {
+    color: #c2a893;
+    text-decoration: none; }
+    .btns a:hover {
+      color: #7d7772; }
 
 * {
   margin: 0rem;

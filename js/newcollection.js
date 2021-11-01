@@ -1,15 +1,15 @@
 Interfaz.numeroCarrito();
 
 $(".banner").html(`
-<img class="banner__img" src="../assets/img/banner1.jpg"/>
-<img class="banner__img" src="../assets/img/banner2.jpg"/>
-<img class="banner__img" src="../assets/img/banner3.jpg"/>
-<img class="banner__img" src="../assets/img/banner4.jpg"/>
-<img class="banner__img" src="../assets/img/banner5.jpg"/>
-<p class="poem">Infinite in mystery is the gift of the Goddess<br>
+<a href="../views/dresses.html"><img class="banner__img" src="../assets/img/banner1.jpg"/></a>
+<a href="../views/dresses.html"><img class="banner__img" src="../assets/img/banner2.jpg"/></a>
+<a href="../views/dresses.html"><img class="banner__img" src="../assets/img/banner3.jpg"/></a>
+<a href="../views/dresses.html"><img class="banner__img" src="../assets/img/banner4.jpg"/></a>
+<a href="../views/dresses.html"><img class="banner__img" src="../assets/img/banner5.jpg"/></a>
+<p class="poem">"Infinite in mystery is the gift of the Goddess<br>
 We seek it thus, and take to the sky<br>
 Ripples form on the water's surface<br>
-The wandering soul knows no rest.</p>
+The wandering soul knows no rest."</p>
 `);
 
 // Animaciones
