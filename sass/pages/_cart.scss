@@ -163,3 +163,89 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px) {
+
+    .cart__container {
+        .cart__div {
+            @include flex(row, center);
+            margin: .5rem 0rem;
+            img {width: 50px;}
+            .dresses__cart--title {
+                @include font(1.5rem);
+                margin: .5rem;
+            }
+            .dresses__cart--price {
+                @include font(1.5rem);
+                margin: .5rem;       
+            }
+        }
+    }
+    
+    .cart__container--price {
+        margin-left: 1rem;
+        margin-top: .5rem;
+        .subtotal {
+            @include font(1.2rem);
+        }
+        button {
+            @include font(1.2rem);
+            padding: .5rem 1rem;
+        }
+        .subtotal__coupon {
+            margin-bottom: 1.2rem;
+            #coupon {
+                @include font(1.2rem);
+                width: 10rem;
+                height: 3rem;
+            }
+            #submit {
+            @include font(1.2rem);
+            margin: 1rem 0rem;
+            padding: .4rem;
+            transition: 1s;
+            margin:auto;
+            }
+            #form__alert {
+                @include font(1.2rem);
+                color: rgb(168, 35, 35);
+                margin: 0rem;
+                padding-top: .5rem;
+                display: none;
+            }
+        }
+    }
+    
+    
+    // Empty Cart
+    
+    .cart__empty {
+        padding: 5rem 0rem;
+        .emptyCart___title {
+            @include font(1.8rem);
+            text-align: center;
+        }
+        .button__emptyCart {
+            @include font(1.2rem);
+        }
+    }
+ 
+// Calculadora
+
+.calc {
+    @include flex2(row, center, stretch);
+    margin: 0rem;
+    .calc__plus {
+        @include font(1.2rem);
+        padding: 0rem .5rem;
+    }
+    .calc__number {
+        @include font(1.2rem);
+        padding: 0rem 1rem;
+        margin-top: .3rem;
+    }
+    .calc__minus {
+        @include font(1.6rem);
+        padding: 0rem .5rem;
+    }
+}
+}

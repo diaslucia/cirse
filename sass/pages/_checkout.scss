@@ -107,3 +107,33 @@ body {
         &:hover{color: $dark;} 
     }
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .wrapper {
+        .container {
+            width: 100%;
+            form {
+                h1 {
+                    @include font(1.8rem);
+                }
+                label {
+                    @include font(1.2rem);
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    
+    }
+
+    .btns {
+        button {
+            @include font(1.2rem);
+            padding: .3rem 2rem;
+            transition: 1s;
+            margin:.1rem 0rem 1rem 0rem;
+
+        };
+    }
+
+}
