@@ -1729,6 +1729,90 @@ body {
     width: 500px;
     padding: 2rem; }
 
+@media only screen and (max-width: 768px) {
+  .newcollection__container .newcollection__titles {
+    margin: 3rem 0rem 1rem 0rem; }
+    .newcollection__container .newcollection__titles .title {
+      letter-spacing: .1rem;
+      font-size: 2rem;
+      font-family: Lora, serif; }
+    .newcollection__container .newcollection__titles .subtitle {
+      font-size: 1.2rem;
+      font-family: Lora, serif;
+      margin-bottom: .5rem;
+      letter-spacing: .1rem;
+      display: none; }
+  .newcollection__container .newcollection__slider {
+    margin: 0rem; }
+    .newcollection__container .newcollection__slider .slider {
+      display: none; }
+      .newcollection__container .newcollection__slider .slider img {
+        width: 200px;
+        margin: 0rem 3rem; }
+    .newcollection__container .newcollection__slider .newcollection__arrows {
+      width: 100%; }
+      .newcollection__container .newcollection__slider .newcollection__arrows button {
+        font-size: 2.5rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        margin: .5rem 0rem rem 0rem; }
+    .newcollection__container .newcollection__slider .showSlide {
+      display: block; }
+  .newcollection__container .poem {
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+    font-family: Lora, serif; }
+  .poem {
+    margin: 0rem;
+    font-size: 1.2rem;
+    font-family: Lora, serif;
+    padding: 0rem 1rem; }
+  .newcollection__img {
+    display: none; }
+  .banner .banner__img {
+    width: 150px;
+    margin: .5rem; }
+  .banner .banner__img4 {
+    display: none; }
+  .banner .banner__img3 {
+    display: none; }
+  .banner .banner__img2 {
+    display: none; }
+  .banner .banner__img5 {
+    display: none; }
+  .newcollection__last {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .newcollection__last .newcollection__poems {
+      background-color: #f9f9f9;
+      box-shadow: none;
+      margin: .5rem;
+      padding: 1.5rem; }
+      .newcollection__last .newcollection__poems .poem1 {
+        font-size: 1.2rem;
+        font-family: Lora, serif; }
+      .newcollection__last .newcollection__poems .poem2 {
+        font-size: 1.2rem;
+        font-family: Lora, serif;
+        letter-spacing: 0rem;
+        margin-left: 1rem;
+        margin-bottom: 0rem; }
+      .newcollection__last .newcollection__poems .poem3 {
+        font-size: 1.2rem;
+        font-family: Lora, serif;
+        letter-spacing: 0rem;
+        margin-left: 2rem;
+        margin-bottom: 0rem; }
+      .newcollection__last .newcollection__poems .poem4 {
+        font-size: 1rem;
+        font-family: Lora, serif;
+        margin-top: 3rem; }
+    .newcollection__last .lastimg {
+      width: 150px;
+      padding: 0rem;
+      margin: 0rem; }
+    .newcollection__last .lastimg2 {
+      display: none; } }
+
 * {
   margin: 0rem;
   padding: 0rem;
