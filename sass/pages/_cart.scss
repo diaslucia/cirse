@@ -171,12 +171,12 @@ body {
             margin: .5rem 0rem;
             img {width: 50px;}
             .dresses__cart--title {
-                @include font(1.5rem);
-                margin: .5rem;
+                @include font(1rem);
+                margin: 0rem .3rem;
             }
             .dresses__cart--price {
-                @include font(1.5rem);
-                margin: .5rem;       
+                @include font(1rem);
+                margin: 0rem .3rem 0rem 0rem;       
             }
         }
     }

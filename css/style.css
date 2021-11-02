@@ -1380,13 +1380,13 @@ body {
     .cart__container .cart__div img {
       width: 50px; }
     .cart__container .cart__div .dresses__cart--title {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: Poppins, Arial, Helvetica, sans-serif;
-      margin: .5rem; }
+      margin: 0rem .3rem; }
     .cart__container .cart__div .dresses__cart--price {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: Poppins, Arial, Helvetica, sans-serif;
-      margin: .5rem; }
+      margin: 0rem .3rem 0rem 0rem; }
   .cart__container--price {
     margin-left: 1rem;
     margin-top: .5rem; }
