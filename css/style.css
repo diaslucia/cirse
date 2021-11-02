@@ -137,7 +137,8 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    width: 99vw; }
     .footer__div .footer__logo {
       font-size: 2.2rem;
       font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -145,6 +146,7 @@ html {
       margin: auto; }
   /* Social Media */
   .footer__media {
+    width: 99vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,21 +162,25 @@ html {
         font-size: 2rem;
         margin: .5rem 1rem .5rem 0rem; }
   /* Orders and Returns */
-  .footer__return .footer__return--title {
-    font-size: 1.2rem;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    color: #f9f9f9; }
-  .footer__return li {
-    font-size: 1rem;
-    font-family: Poppins, Arial, Helvetica, sans-serif; }
+  .footer__return {
+    width: 99vw; }
+    .footer__return .footer__return--title {
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      color: #f9f9f9; }
+    .footer__return li {
+      font-size: 1rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif; }
   /* Help */
-  .footer__help .footer__help--title {
-    font-size: 1.2rem;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    color: #f9f9f9; }
-  .footer__help li {
-    font-size: 1rem;
-    font-family: Poppins, Arial, Helvetica, sans-serif; } }
+  .footer__help {
+    width: 99vw; }
+    .footer__help .footer__help--title {
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      color: #f9f9f9; }
+    .footer__help li {
+      font-size: 1rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif; } }
 
 /* TABLET */
 @media only screen and (min-width: 601px) and (max-width: 1100px) {
@@ -2082,6 +2088,7 @@ body {
     .newcollection__container .newcollection__slider .showSlide {
       display: block; }
   .newcollection__container .poem {
+    width: 25vw;
     padding: 4rem;
     font-size: 0.9vw;
     font-family: Lora, serif;
@@ -2198,6 +2205,7 @@ body {
     .newcollection__container .newcollection__slider .showSlide {
       display: block; }
   .newcollection__container .poem {
+    width: 70vw;
     margin: 0rem 2rem;
     font-size: 1.2rem;
     font-family: Lora, serif; }
@@ -2205,7 +2213,8 @@ body {
     margin: 0rem;
     font-size: 1.2rem;
     font-family: Lora, serif;
-    padding: 0rem 1rem; }
+    padding: 0rem 1.5rem;
+    text-align: justify; }
   .newcollection__img {
     width: 100%;
     filter: saturate(0.3);
@@ -2232,7 +2241,8 @@ body {
       padding: 1.5rem; }
       .newcollection__last .newcollection__poems .poem1 {
         font-size: 1.2rem;
-        font-family: Lora, serif; }
+        font-family: Lora, serif;
+        text-align: justify; }
       .newcollection__last .newcollection__poems .poem2 {
         font-size: 1.2rem;
         font-family: Lora, serif;
@@ -2286,6 +2296,7 @@ body {
     .newcollection__container .newcollection__slider .showSlide {
       display: block; }
   .newcollection__container .poem {
+    width: 50vw;
     margin: 0rem 2rem;
     font-size: 1.4rem;
     font-family: Lora, serif; }

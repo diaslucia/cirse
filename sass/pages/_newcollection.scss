@@ -59,13 +59,13 @@ body {
         .showSlide {display:block;}
     }
     .poem {
+        width: 25vw;
         padding: 4rem;
         @include serif(.9vw);
         color: $secondary-color;
         text-align: center;
         font-style: italic;
     }
-
 }
 
 .poem {
@@ -185,6 +185,7 @@ body {
             .showSlide {display:block;}
         }
         .poem {
+            width: 70vw;
             margin: 0rem 2rem;
             @include serif(1.2rem);
         }
@@ -194,7 +195,8 @@ body {
     .poem {
         margin: 0rem;
         @include serif(1.2rem);
-        padding: 0rem 1rem;
+        padding: 0rem 1.5rem;
+        text-align: justify;
     }
 
     .newcollection__img{
@@ -225,6 +227,7 @@ body {
             padding: 1.5rem;
             .poem1 {
                 @include serif(1.2rem);
+                text-align: justify;
             }  
             .poem2 {
                 @include serif(1.2rem);
@@ -289,6 +292,7 @@ body {
             .showSlide {display:block;}
         }
         .poem {
+            width: 50vw;
             margin: 0rem 2rem;
             @include serif(1.4rem);
         }

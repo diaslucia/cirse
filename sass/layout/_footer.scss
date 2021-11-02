@@ -122,6 +122,7 @@
 
 .footer__div {
     @include flex(row,flex-start);
+    width:99vw;
     .footer__logo {
         @include font (2.2rem);
         padding: 2rem;
@@ -132,6 +133,7 @@
 /* Social Media */
 
 .footer__media{
+    width:99vw;
     @include flex2(column, center, flex-start);
     .footer__media--title {@include font(1.2rem);color: $base-color;}
     .footer__media2{
@@ -148,6 +150,7 @@
 /* Orders and Returns */
 
 .footer__return{
+    width:99vw;
     .footer__return--title {@include font(1.2rem); color: $base-color;}
     li {@include font(1rem);}
 }
@@ -155,6 +158,7 @@
 /* Help */
 
 .footer__help {
+    width:99vw;
     .footer__help--title {@include font(1.2rem);color: $base-color;}
     li {@include font(1rem);}
 }
