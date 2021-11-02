@@ -1,7 +1,7 @@
 // ----- Traigo los productos del localStorage
 const carrito = new Carrito(Helper.traerStorage());
 
-// ----- Sort By y Filter By Boton Eventos
+// ----- Delegación de eventos: Sort By y Filter By Boton Eventos
 
 document.getElementById("dropdown").addEventListener("click", (e) => {
   e.preventDefault();

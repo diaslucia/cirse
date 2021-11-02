@@ -1,5 +1,6 @@
 //PÁGINA HOME
 Interfaz.numeroCarrito();
+
 // ----- Slider
 
 let slidePosition = 0;

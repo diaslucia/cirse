@@ -60,7 +60,6 @@ class Carrito {
 }
 
 class Interfaz { 
-
     static numeroCarrito() {
         const numeritoDiv = document.querySelector(".circle");
         let numerito = 0;
@@ -159,7 +158,6 @@ class Interfaz {
 }
 
 class Filtro {
-
     static highLowFiltro() {
         let nuevoArray = [];
         nuevoArray = Object.assign(nuevoArray, productos);

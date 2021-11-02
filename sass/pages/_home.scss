@@ -65,6 +65,7 @@ body {
             color: $beige;
             padding: .5rem 4rem;
             letter-spacing: .3rem;
+            margin-bottom: 2rem;
         }
     }
     
@@ -86,10 +87,6 @@ body {
 
 }
 
-/* Cards FUTURO CAROUSEL */
-
-
-
 /* New In */
 
 .newin__secondary:before {
@@ -106,7 +103,7 @@ body {
   .newin__main {
     @include flex(row, center);
     img {
-      height: 750px;
+      height: 38vw;
     }
   }
   .newin__secondary {
@@ -141,7 +138,7 @@ body {
       @include flex(row, space-around);
       position: relative;
       img {
-        width: 210px;
+        width: 10vw;
         margin: 10rem 3rem 0rem 3rem;
         transition: 2s;
         &:hover {
@@ -174,7 +171,7 @@ body {
       @include flex(column, center);
       margin: 3rem;
       img{
-        width: 25rem;
+        width: 15vw;
         margin: 1rem;
         height: auto;
       }
@@ -244,7 +241,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
 
   .carousel {
     width: 100%;
@@ -330,9 +329,9 @@ body {
       @include flex(column, center);
       margin: 0rem;
       img{
-        width: 7rem;
+        width: 18vw;
         margin: .2rem;
-        height: auto;
+        height: 28vw;
       }
       p {display:none;}
       .cards__price {display:none;}
@@ -354,4 +353,129 @@ body {
   }
 }
 
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+
+  .carousel {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* Coupon */
+.coupon {width: 50%;padding: 1.5rem .5rem .5rem .5rem;}
+
+/* New Collection */
+.new__container {
+  margin: 1rem 0rem;
+  .new__info{
+    margin-bottom: 4rem;
+      h1 {
+          letter-spacing: 1.8rem;
+          @include serif(2.5rem);
+      }
+      h2 {
+          @include serif(2.2rem);
+      }
+      button {
+          position: relative;
+          @include font(1.5rem);
+          border-radius: 2%;
+          padding: .5rem 2rem;
+          letter-spacing: .3rem;
+      }
+  }
+  .new__img1 {width: 80%;margin: 3rem 0rem 1rem 3rem;}
+  .new__img2 {width: 80%;margin: 9rem 0rem 1rem 3rem;}
+  .new__img3 {width: 80%;margin: 15rem 0rem 3rem 3rem;}
+}
+
+/* New In */
+
+.newin__secondary:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(58, 58, 58, 0.50);}
+
+.newin {
+  .newin__main {
+    img {
+      display:none;
+    }
+  }
+  .newin__secondary {
+    margin: 2rem;
+    .newin__info {
+      margin-top: 3rem;
+      h3{@include serif(2.8rem); letter-spacing: 1.5rem;}
+      p {@include serif(2rem);}}
+    .newin__img {
+      @include flex(row, space-around);
+      img {
+        width: 150px;
+        margin: 4rem 1rem;
+      }
+      }
+      #newin__img--none {display:none}
+  }
+}
+
+
+/* Sliders */
+
+.cards__title {
+  margin: 1rem 0rem;
+  h1 {@include serif(3rem);}
+}
+.carousel {
+  margin: 0rem;
+  .carousel__item {
+    display: none;
+    .cards{
+      @include flex(column, center);
+      margin: 0rem;
+      img{
+        width: 13rem;
+        margin: .5rem;
+        height: auto;
+      }
+      p {
+        @include font(1.3rem);
+      }
+      .cards__price {
+          @include font(1.2rem);
+      }
+      .carousel__button {
+        @include font(1rem);
+        letter-spacing: .2rem;
+        border: 0rem;
+        border-radius: 5%;
+        background-color: $secondary-color;
+        color: $base-color;
+        padding: .5rem;
+        transition: .5s;
+        margin:.5rem 0rem 2rem 0rem;
+    }}
+  }
+  .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    @include flex(row, center);
+  }
+  .carousel__actions {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    button {@include font(2rem);}
+    #carousel__button--prev {margin-left: 5px;}
+    #carousel__button--next {margin-right: 5px;}
+  }
+}
 }

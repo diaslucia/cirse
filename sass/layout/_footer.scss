@@ -105,14 +105,16 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
     
 .footer {
     background-color: $secondary-color;
     margin-top:1rem;
     padding: 1rem 0rem;
     .footer__container{
-        @include flex(column, space-around);
+        @include flex2(column, flex-start, flex-start);
     }
 }
 
@@ -122,6 +124,7 @@
     @include flex(row,flex-start);
     .footer__logo {
         @include font (2.2rem);
+        padding: 2rem;
         margin: auto;
     }
 }
@@ -155,4 +158,56 @@
     .footer__help--title {@include font(1.2rem);color: $base-color;}
     li {@include font(1rem);}
 }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .footer {
+        background-color: $secondary-color;
+        margin-top:1rem;
+        padding: 1rem 0rem;
+        .footer__container{
+            @include flex(row, flex-start);
+        }
+    }
+    
+    /* Logo */
+    
+    .footer__div {
+        @include flex(row,flex-start);
+        .footer__logo {
+            @include font (2.2rem);
+            margin: auto;
+        }
+    }
+    
+    /* Social Media */
+    
+    .footer__media{
+        @include flex2(column, center, flex-start);
+        .footer__media--title {@include font(1.2rem);color: $base-color;}
+        .footer__media2{
+            li {@include font(1.2rem);
+                a{ i{
+                    font-size: 2.3rem;
+                    margin:.5rem 1rem .5rem 0rem;
+                }}
+            }
+        }
+    }
+    
+    /* Orders and Returns */
+    
+    .footer__return{
+        .footer__return--title {@include font(1.2rem); color: $base-color;}
+        li {@include font(1rem);}
+    }
+    
+    /* Help */
+    
+    .footer__help {
+        .footer__help--title {@include font(1.2rem);color: $base-color;}
+        li {@include font(1rem);}
+    }
 }

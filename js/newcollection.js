@@ -1,5 +1,7 @@
 Interfaz.numeroCarrito();
 
+// jQuery y DOM
+
 $(".banner").html(`
 <a href="../views/dresses.html"><img class="banner__img banner__img1" src="../assets/img/banner1.jpg"/></a>
 <a href="../views/dresses.html"><img class="banner__img banner__img2" src="../assets/img/banner2.jpg"/></a>

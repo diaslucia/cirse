@@ -16,11 +16,11 @@ body {
             text-align: center;
             letter-spacing: 1rem;
             color: $beige;
-            @include serif(3.5rem);
+            @include serif(2.8vw);
             transition: 5s;
         }
         .subtitle {
-            @include serif(2rem);
+            @include serif(1.2vw);
             color: $secondary-color;
             margin-bottom: 1rem;
             letter-spacing: .3rem;
@@ -35,7 +35,7 @@ body {
         .slider {
             display: none;
             img {
-                width: 300px;
+                width: 15vw;
                 margin: 2rem;
                 transition: 2s;
             }
@@ -60,7 +60,7 @@ body {
     }
     .poem {
         padding: 4rem;
-        @include serif(1.4rem);
+        @include serif(.9vw);
         color: $secondary-color;
         text-align: center;
         font-style: italic;
@@ -70,7 +70,7 @@ body {
 
 .poem {
     padding: 4rem;
-    @include serif(1.4rem);
+    @include serif(.9vw);
     color: $secondary-color;
     text-align: center;
     font-style: italic;
@@ -88,7 +88,7 @@ body {
     margin: 1rem 0rem;
     @include flex(row, center);
     .banner__img{
-        width:250px;
+        width:12vw;
         height: auto;
         margin: 1rem;
         transition: 2s;
@@ -112,12 +112,12 @@ body {
         margin: 3rem;
         padding: 5rem;
         .poem1 {
-            @include serif(1.4rem);
+            @include serif(.9vw);
             color: $secondary-color;
             font-style: italic;
         }  
         .poem2 {
-            @include serif(2rem);
+            @include serif(1vw);
             color: $dark;
             letter-spacing: .5rem;
             text-align: center;
@@ -126,7 +126,7 @@ body {
             margin-bottom: 0rem;
         }
         .poem3 {
-            @include serif(2rem);
+            @include serif(1vw);
             color: $secondary-color;
             letter-spacing: .5rem;
             text-align: center;
@@ -135,20 +135,22 @@ body {
             margin-bottom: 0rem;
         }
         .poem4 {
-            @include serif(1.4rem);
+            @include serif(.9vw);
             color: $secondary-color;
             font-style: italic;
             margin-top: 3rem;
         }
     }
     .lastimg {
-        width: 500px;
+        width: 25vw;
         padding: 2rem;
     }
     
 }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
 
     .newcollection__container {
         .newcollection__titles {
@@ -194,8 +196,12 @@ body {
         @include serif(1.2rem);
         padding: 0rem 1rem;
     }
-    
-    .newcollection__img{display:none;}
+
+    .newcollection__img{
+        width: 100%;
+        filter: saturate(.3);
+        transition: filter 2s;
+    }
     
     .banner {
         .banner__img{
@@ -239,6 +245,110 @@ body {
         }
         .lastimg {
             width: 150px;
+            padding: 0rem;
+            margin: 0rem;
+        }
+        .lastimg2{display:none;}
+        
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .newcollection__container {
+        .newcollection__titles {
+            margin: 3rem 0rem 1rem 0rem;
+            .title {
+                letter-spacing: .1rem;
+                @include serif(2.2rem);
+            }
+            .subtitle {
+                @include serif(1.4rem);
+                margin-bottom: .5rem;
+                letter-spacing: .1rem;
+                display:none;
+            }
+        }
+        .newcollection__slider {
+            margin: 0rem;
+            .slider {
+                display: none;
+                img {
+                    width: 200px;
+                    margin: 0rem 3rem;
+                }
+            }
+            .newcollection__arrows {
+                width: 100%;
+                button {
+                    @include font(2.8rem);
+                    margin:.5rem 0rem rem 0rem;
+                    }
+            }
+            .showSlide {display:block;}
+        }
+        .poem {
+            margin: 0rem 2rem;
+            @include serif(1.4rem);
+        }
+    
+    }
+    
+    .poem {
+        margin: 0rem;
+        @include serif(1.4rem);
+        padding: 0rem 1rem;
+    }
+    
+    .newcollection__img{
+        width: 100%;
+        filter: saturate(.3);
+        transition: filter 2s;
+    }
+
+    .banner {
+        .banner__img{
+            width:250px;
+            margin: .5rem;
+            filter: grayscale(0%);
+        }
+        .banner__img4{display:none;}
+        .banner__img3{display:none;}
+        .banner__img2{display:none;}
+        .banner__img5{display:none;}
+    }
+    
+    .newcollection__last {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .newcollection__poems {
+            background-color:$base-color;
+            box-shadow: none;
+            margin: .5rem;
+            padding: 1.5rem;
+            .poem1 {
+                @include serif(1.4rem);
+            }  
+            .poem2 {
+                @include serif(1.4rem);
+                letter-spacing: 0rem;
+                margin-left: 1rem;
+                margin-bottom: 0rem;
+            }
+            .poem3 {
+                @include serif(1.4rem);
+                letter-spacing: 0rem;
+                margin-left: 2rem;
+                margin-bottom: 0rem;
+            }
+            .poem4 {
+                @include serif(1.2rem);
+                margin-top: 3rem;
+            }
+        }
+        .lastimg {
+            width: 250px;
             padding: 0rem;
             margin: 0rem;
         }

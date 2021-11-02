@@ -121,7 +121,8 @@ html {
         .created .col p a:visited {
           color: #bc8b9c; }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .footer {
     background-color: #c2a893;
     margin-top: 1rem;
@@ -129,7 +130,62 @@ html {
     .footer .footer__container {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
+      align-items: flex-start; }
+  /* Logo */
+  .footer__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer__div .footer__logo {
+      font-size: 2.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      padding: 2rem;
+      margin: auto; }
+  /* Social Media */
+  .footer__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .footer__media .footer__media--title {
+      font-size: 1.2rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      color: #f9f9f9; }
+    .footer__media .footer__media2 li {
+      font-size: 1rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif; }
+      .footer__media .footer__media2 li a i {
+        font-size: 2rem;
+        margin: .5rem 1rem .5rem 0rem; }
+  /* Orders and Returns */
+  .footer__return .footer__return--title {
+    font-size: 1.2rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #f9f9f9; }
+  .footer__return li {
+    font-size: 1rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif; }
+  /* Help */
+  .footer__help .footer__help--title {
+    font-size: 1.2rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: #f9f9f9; }
+  .footer__help li {
+    font-size: 1rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .footer {
+    background-color: #c2a893;
+    margin-top: 1rem;
+    padding: 1rem 0rem; }
+    .footer .footer__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
       align-items: center; }
   /* Logo */
   .footer__div {
@@ -152,10 +208,10 @@ html {
       font-family: Poppins, Arial, Helvetica, sans-serif;
       color: #f9f9f9; }
     .footer__media .footer__media2 li {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: Poppins, Arial, Helvetica, sans-serif; }
       .footer__media .footer__media2 li a i {
-        font-size: 2rem;
+        font-size: 2.3rem;
         margin: .5rem 1rem .5rem 0rem; }
   /* Orders and Returns */
   .footer__return .footer__return--title {
@@ -260,7 +316,8 @@ nav {
         nav .nav__second ul a:hover {
           color: #f9f9f9; }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   nav {
     width: 99%;
     font-size: 20px; }
@@ -280,6 +337,15 @@ nav {
         font-size: 1.2rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
         letter-spacing: 0px; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .nav__second {
+    padding: 1.5rem 0rem 1rem 0rem; }
+    .nav__second ul {
+      font-size: 1.3rem;
+      font-family: Poppins, Arial, Helvetica, sans-serif;
+      letter-spacing: 0px; } }
 
 * {
   margin: 0rem;
@@ -364,7 +430,8 @@ body {
       background-color: #7d7772;
       color: #eee7d6;
       padding: .5rem 4rem;
-      letter-spacing: .3rem; }
+      letter-spacing: .3rem;
+      margin-bottom: 2rem; }
   .new__container .new__img1 {
     width: 70%;
     margin: 3rem 0rem 1rem 3rem;
@@ -378,7 +445,6 @@ body {
     margin: 15rem 0rem 3rem 1rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
 
-/* Cards FUTURO CAROUSEL */
 /* New In */
 .newin__secondary:before {
   content: "";
@@ -400,7 +466,7 @@ body {
     justify-content: center;
     align-items: center; }
     .newin .newin__main img {
-      height: 750px; }
+      height: 38vw; }
   .newin .newin__secondary {
     display: flex;
     flex-direction: column;
@@ -436,7 +502,7 @@ body {
       align-items: center;
       position: relative; }
       .newin .newin__secondary .newin__img img {
-        width: 210px;
+        width: 10vw;
         margin: 10rem 3rem 0rem 3rem;
         transition: 2s; }
         .newin .newin__secondary .newin__img img:hover {
@@ -467,7 +533,7 @@ body {
       align-items: center;
       margin: 3rem; }
       .carousel .carousel__item .cards img {
-        width: 25rem;
+        width: 15vw;
         margin: 1rem;
         height: auto; }
       .carousel .carousel__item .cards p {
@@ -530,7 +596,8 @@ body {
     opacity: 1;
     transform: opacity linear; } }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .carousel {
     width: 100%;
     height: 200px;
@@ -617,15 +684,141 @@ body {
         align-items: center;
         margin: 0rem; }
         .carousel .carousel__item .cards img {
-          width: 7rem;
+          width: 18vw;
           margin: .2rem;
-          height: auto; }
+          height: 28vw; }
         .carousel .carousel__item .cards p {
           display: none; }
         .carousel .carousel__item .cards .cards__price {
           display: none; }
         .carousel .carousel__item .cards .carousel__button {
           display: none; }
+    .carousel .carousel__item--visible {
+      display: block;
+      animation: fadeVisibility 0.5s;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .carousel .carousel__actions {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%); }
+      .carousel .carousel__actions button {
+        font-size: 2rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif; }
+      .carousel .carousel__actions #carousel__button--prev {
+        margin-left: 5px; }
+      .carousel .carousel__actions #carousel__button--next {
+        margin-right: 5px; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .carousel {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem; }
+  /* Coupon */
+  .coupon {
+    width: 50%;
+    padding: 1.5rem .5rem .5rem .5rem; }
+  /* New Collection */
+  .new__container {
+    margin: 1rem 0rem; }
+    .new__container .new__info {
+      margin-bottom: 4rem; }
+      .new__container .new__info h1 {
+        letter-spacing: 1.8rem;
+        font-size: 2.5rem;
+        font-family: Lora, serif; }
+      .new__container .new__info h2 {
+        font-size: 2.2rem;
+        font-family: Lora, serif; }
+      .new__container .new__info button {
+        position: relative;
+        font-size: 1.5rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        border-radius: 2%;
+        padding: .5rem 2rem;
+        letter-spacing: .3rem; }
+    .new__container .new__img1 {
+      width: 80%;
+      margin: 3rem 0rem 1rem 3rem; }
+    .new__container .new__img2 {
+      width: 80%;
+      margin: 9rem 0rem 1rem 3rem; }
+    .new__container .new__img3 {
+      width: 80%;
+      margin: 15rem 0rem 3rem 3rem; }
+  /* New In */
+  .newin__secondary:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(58, 58, 58, 0.5); }
+  .newin .newin__main img {
+    display: none; }
+  .newin .newin__secondary {
+    margin: 2rem; }
+    .newin .newin__secondary .newin__info {
+      margin-top: 3rem; }
+      .newin .newin__secondary .newin__info h3 {
+        font-size: 2.8rem;
+        font-family: Lora, serif;
+        letter-spacing: 1.5rem; }
+      .newin .newin__secondary .newin__info p {
+        font-size: 2rem;
+        font-family: Lora, serif; }
+    .newin .newin__secondary .newin__img {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .newin .newin__secondary .newin__img img {
+        width: 150px;
+        margin: 4rem 1rem; }
+    .newin .newin__secondary #newin__img--none {
+      display: none; }
+  /* Sliders */
+  .cards__title {
+    margin: 1rem 0rem; }
+    .cards__title h1 {
+      font-size: 3rem;
+      font-family: Lora, serif; }
+  .carousel {
+    margin: 0rem; }
+    .carousel .carousel__item {
+      display: none; }
+      .carousel .carousel__item .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem; }
+        .carousel .carousel__item .cards img {
+          width: 13rem;
+          margin: .5rem;
+          height: auto; }
+        .carousel .carousel__item .cards p {
+          font-size: 1.3rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif; }
+        .carousel .carousel__item .cards .cards__price {
+          font-size: 1.2rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif; }
+        .carousel .carousel__item .cards .carousel__button {
+          font-size: 1rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          letter-spacing: .2rem;
+          border: 0rem;
+          border-radius: 5%;
+          background-color: #c2a893;
+          color: #f9f9f9;
+          padding: .5rem;
+          transition: .5s;
+          margin: .5rem 0rem 2rem 0rem; }
     .carousel .carousel__item--visible {
       display: block;
       animation: fadeVisibility 0.5s;
@@ -716,7 +909,8 @@ body {
       background-color: #7d7772;
       color: #eee7d6;
       padding: .5rem 4rem;
-      letter-spacing: .3rem; }
+      letter-spacing: .3rem;
+      margin-bottom: 2rem; }
   .new__container .new__img1 {
     width: 70%;
     margin: 3rem 0rem 1rem 3rem;
@@ -730,7 +924,6 @@ body {
     margin: 15rem 0rem 3rem 1rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15); }
 
-/* Cards FUTURO CAROUSEL */
 /* New In */
 .newin__secondary:before {
   content: "";
@@ -752,7 +945,7 @@ body {
     justify-content: center;
     align-items: center; }
     .newin .newin__main img {
-      height: 750px; }
+      height: 38vw; }
   .newin .newin__secondary {
     display: flex;
     flex-direction: column;
@@ -788,7 +981,7 @@ body {
       align-items: center;
       position: relative; }
       .newin .newin__secondary .newin__img img {
-        width: 210px;
+        width: 10vw;
         margin: 10rem 3rem 0rem 3rem;
         transition: 2s; }
         .newin .newin__secondary .newin__img img:hover {
@@ -819,7 +1012,7 @@ body {
       align-items: center;
       margin: 3rem; }
       .carousel .carousel__item .cards img {
-        width: 25rem;
+        width: 15vw;
         margin: 1rem;
         height: auto; }
       .carousel .carousel__item .cards p {
@@ -882,7 +1075,8 @@ body {
     opacity: 1;
     transform: opacity linear; } }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .carousel {
     width: 100%;
     height: 200px;
@@ -969,15 +1163,141 @@ body {
         align-items: center;
         margin: 0rem; }
         .carousel .carousel__item .cards img {
-          width: 7rem;
+          width: 18vw;
           margin: .2rem;
-          height: auto; }
+          height: 28vw; }
         .carousel .carousel__item .cards p {
           display: none; }
         .carousel .carousel__item .cards .cards__price {
           display: none; }
         .carousel .carousel__item .cards .carousel__button {
           display: none; }
+    .carousel .carousel__item--visible {
+      display: block;
+      animation: fadeVisibility 0.5s;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .carousel .carousel__actions {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%); }
+      .carousel .carousel__actions button {
+        font-size: 2rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif; }
+      .carousel .carousel__actions #carousel__button--prev {
+        margin-left: 5px; }
+      .carousel .carousel__actions #carousel__button--next {
+        margin-right: 5px; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .carousel {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem; }
+  /* Coupon */
+  .coupon {
+    width: 50%;
+    padding: 1.5rem .5rem .5rem .5rem; }
+  /* New Collection */
+  .new__container {
+    margin: 1rem 0rem; }
+    .new__container .new__info {
+      margin-bottom: 4rem; }
+      .new__container .new__info h1 {
+        letter-spacing: 1.8rem;
+        font-size: 2.5rem;
+        font-family: Lora, serif; }
+      .new__container .new__info h2 {
+        font-size: 2.2rem;
+        font-family: Lora, serif; }
+      .new__container .new__info button {
+        position: relative;
+        font-size: 1.5rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        border-radius: 2%;
+        padding: .5rem 2rem;
+        letter-spacing: .3rem; }
+    .new__container .new__img1 {
+      width: 80%;
+      margin: 3rem 0rem 1rem 3rem; }
+    .new__container .new__img2 {
+      width: 80%;
+      margin: 9rem 0rem 1rem 3rem; }
+    .new__container .new__img3 {
+      width: 80%;
+      margin: 15rem 0rem 3rem 3rem; }
+  /* New In */
+  .newin__secondary:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(58, 58, 58, 0.5); }
+  .newin .newin__main img {
+    display: none; }
+  .newin .newin__secondary {
+    margin: 2rem; }
+    .newin .newin__secondary .newin__info {
+      margin-top: 3rem; }
+      .newin .newin__secondary .newin__info h3 {
+        font-size: 2.8rem;
+        font-family: Lora, serif;
+        letter-spacing: 1.5rem; }
+      .newin .newin__secondary .newin__info p {
+        font-size: 2rem;
+        font-family: Lora, serif; }
+    .newin .newin__secondary .newin__img {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .newin .newin__secondary .newin__img img {
+        width: 150px;
+        margin: 4rem 1rem; }
+    .newin .newin__secondary #newin__img--none {
+      display: none; }
+  /* Sliders */
+  .cards__title {
+    margin: 1rem 0rem; }
+    .cards__title h1 {
+      font-size: 3rem;
+      font-family: Lora, serif; }
+  .carousel {
+    margin: 0rem; }
+    .carousel .carousel__item {
+      display: none; }
+      .carousel .carousel__item .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem; }
+        .carousel .carousel__item .cards img {
+          width: 13rem;
+          margin: .5rem;
+          height: auto; }
+        .carousel .carousel__item .cards p {
+          font-size: 1.3rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif; }
+        .carousel .carousel__item .cards .cards__price {
+          font-size: 1.2rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif; }
+        .carousel .carousel__item .cards .carousel__button {
+          font-size: 1rem;
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          letter-spacing: .2rem;
+          border: 0rem;
+          border-radius: 5%;
+          background-color: #c2a893;
+          color: #f9f9f9;
+          padding: .5rem;
+          transition: .5s;
+          margin: .5rem 0rem 2rem 0rem; }
     .carousel .carousel__item--visible {
       display: block;
       animation: fadeVisibility 0.5s;
@@ -1172,7 +1492,8 @@ body {
       .dresses__container .dresses__div button:active {
         box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .dresses__container {
     display: flex;
     flex-direction: row;
@@ -1194,6 +1515,26 @@ body {
         font-family: Poppins, Arial, Helvetica, sans-serif; }
       .dresses__container .dresses__div button {
         font-size: 1.3rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        padding: .2rem;
+        margin: 0rem; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .dresses__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap; }
+    .dresses__container .dresses__div {
+      margin: 1rem; }
+      .dresses__container .dresses__div img {
+        width: 15rem;
+        margin: .5rem; }
+      .dresses__container .dresses__div button {
+        font-size: 1.5rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
         padding: .2rem;
         margin: 0rem; } }
@@ -1370,7 +1711,7 @@ body {
     .calc .calc__minus:active {
       box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .cart__container .cart__div {
     display: flex;
     flex-direction: row;
@@ -1622,7 +1963,8 @@ body {
       .accesories__container .accesories__div button:active {
         box-shadow: inset -1px -1px 6px rgba(105, 93, 66, 0.52); }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .accesories__container {
     display: flex;
     flex-direction: row;
@@ -1644,6 +1986,26 @@ body {
         font-family: Poppins, Arial, Helvetica, sans-serif; }
       .accesories__container .accesories__div button {
         font-size: 1.3rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        padding: .2rem;
+        margin: 0rem; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .accesories__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap; }
+    .accesories__container .accesories__div {
+      margin: 1rem; }
+      .accesories__container .accesories__div img {
+        width: 15rem;
+        margin: .5rem; }
+      .accesories__container .accesories__div button {
+        font-size: 1.5rem;
         font-family: Poppins, Arial, Helvetica, sans-serif;
         padding: .2rem;
         margin: 0rem; } }
@@ -1678,11 +2040,11 @@ body {
       text-align: center;
       letter-spacing: 1rem;
       color: #eee7d6;
-      font-size: 3.5rem;
+      font-size: 2.8vw;
       font-family: Lora, serif;
       transition: 5s; }
     .newcollection__container .newcollection__titles .subtitle {
-      font-size: 2rem;
+      font-size: 1.2vw;
       font-family: Lora, serif;
       color: #c2a893;
       margin-bottom: 1rem;
@@ -1699,7 +2061,7 @@ body {
     .newcollection__container .newcollection__slider .slider {
       display: none; }
       .newcollection__container .newcollection__slider .slider img {
-        width: 300px;
+        width: 15vw;
         margin: 2rem;
         transition: 2s; }
     .newcollection__container .newcollection__slider .newcollection__arrows {
@@ -1721,7 +2083,7 @@ body {
       display: block; }
   .newcollection__container .poem {
     padding: 4rem;
-    font-size: 1.4rem;
+    font-size: 0.9vw;
     font-family: Lora, serif;
     color: #c2a893;
     text-align: center;
@@ -1729,7 +2091,7 @@ body {
 
 .poem {
   padding: 4rem;
-  font-size: 1.4rem;
+  font-size: 0.9vw;
   font-family: Lora, serif;
   color: #c2a893;
   text-align: center;
@@ -1748,7 +2110,7 @@ body {
   justify-content: center;
   align-items: center; }
   .banner .banner__img {
-    width: 250px;
+    width: 12vw;
     height: auto;
     margin: 1rem;
     transition: 2s;
@@ -1774,12 +2136,12 @@ body {
     margin: 3rem;
     padding: 5rem; }
     .newcollection__last .newcollection__poems .poem1 {
-      font-size: 1.4rem;
+      font-size: 0.9vw;
       font-family: Lora, serif;
       color: #c2a893;
       font-style: italic; }
     .newcollection__last .newcollection__poems .poem2 {
-      font-size: 2rem;
+      font-size: 1vw;
       font-family: Lora, serif;
       color: #7d7772;
       letter-spacing: .5rem;
@@ -1788,7 +2150,7 @@ body {
       margin-left: 5rem;
       margin-bottom: 0rem; }
     .newcollection__last .newcollection__poems .poem3 {
-      font-size: 2rem;
+      font-size: 1vw;
       font-family: Lora, serif;
       color: #c2a893;
       letter-spacing: .5rem;
@@ -1797,16 +2159,17 @@ body {
       margin-left: 10rem;
       margin-bottom: 0rem; }
     .newcollection__last .newcollection__poems .poem4 {
-      font-size: 1.4rem;
+      font-size: 0.9vw;
       font-family: Lora, serif;
       color: #c2a893;
       font-style: italic;
       margin-top: 3rem; }
   .newcollection__last .lastimg {
-    width: 500px;
+    width: 25vw;
     padding: 2rem; }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
+@media only screen and (max-width: 600px) {
   .newcollection__container .newcollection__titles {
     margin: 3rem 0rem 1rem 0rem; }
     .newcollection__container .newcollection__titles .title {
@@ -1844,7 +2207,9 @@ body {
     font-family: Lora, serif;
     padding: 0rem 1rem; }
   .newcollection__img {
-    display: none; }
+    width: 100%;
+    filter: saturate(0.3);
+    transition: filter 2s; }
   .banner .banner__img {
     width: 150px;
     margin: .5rem;
@@ -1886,6 +2251,94 @@ body {
         margin-top: 3rem; }
     .newcollection__last .lastimg {
       width: 150px;
+      padding: 0rem;
+      margin: 0rem; }
+    .newcollection__last .lastimg2 {
+      display: none; } }
+
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  .newcollection__container .newcollection__titles {
+    margin: 3rem 0rem 1rem 0rem; }
+    .newcollection__container .newcollection__titles .title {
+      letter-spacing: .1rem;
+      font-size: 2.2rem;
+      font-family: Lora, serif; }
+    .newcollection__container .newcollection__titles .subtitle {
+      font-size: 1.4rem;
+      font-family: Lora, serif;
+      margin-bottom: .5rem;
+      letter-spacing: .1rem;
+      display: none; }
+  .newcollection__container .newcollection__slider {
+    margin: 0rem; }
+    .newcollection__container .newcollection__slider .slider {
+      display: none; }
+      .newcollection__container .newcollection__slider .slider img {
+        width: 200px;
+        margin: 0rem 3rem; }
+    .newcollection__container .newcollection__slider .newcollection__arrows {
+      width: 100%; }
+      .newcollection__container .newcollection__slider .newcollection__arrows button {
+        font-size: 2.8rem;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        margin: .5rem 0rem rem 0rem; }
+    .newcollection__container .newcollection__slider .showSlide {
+      display: block; }
+  .newcollection__container .poem {
+    margin: 0rem 2rem;
+    font-size: 1.4rem;
+    font-family: Lora, serif; }
+  .poem {
+    margin: 0rem;
+    font-size: 1.4rem;
+    font-family: Lora, serif;
+    padding: 0rem 1rem; }
+  .newcollection__img {
+    width: 100%;
+    filter: saturate(0.3);
+    transition: filter 2s; }
+  .banner .banner__img {
+    width: 250px;
+    margin: .5rem;
+    filter: grayscale(0%); }
+  .banner .banner__img4 {
+    display: none; }
+  .banner .banner__img3 {
+    display: none; }
+  .banner .banner__img2 {
+    display: none; }
+  .banner .banner__img5 {
+    display: none; }
+  .newcollection__last {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .newcollection__last .newcollection__poems {
+      background-color: #f9f9f9;
+      box-shadow: none;
+      margin: .5rem;
+      padding: 1.5rem; }
+      .newcollection__last .newcollection__poems .poem1 {
+        font-size: 1.4rem;
+        font-family: Lora, serif; }
+      .newcollection__last .newcollection__poems .poem2 {
+        font-size: 1.4rem;
+        font-family: Lora, serif;
+        letter-spacing: 0rem;
+        margin-left: 1rem;
+        margin-bottom: 0rem; }
+      .newcollection__last .newcollection__poems .poem3 {
+        font-size: 1.4rem;
+        font-family: Lora, serif;
+        letter-spacing: 0rem;
+        margin-left: 2rem;
+        margin-bottom: 0rem; }
+      .newcollection__last .newcollection__poems .poem4 {
+        font-size: 1.2rem;
+        font-family: Lora, serif;
+        margin-top: 3rem; }
+    .newcollection__last .lastimg {
+      width: 250px;
       padding: 0rem;
       margin: 0rem; }
     .newcollection__last .lastimg2 {
@@ -1988,7 +2441,7 @@ body {
     .btns a:hover {
       color: #7d7772; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .wrapper .container {
     width: 100%; }
     .wrapper .container form h1 {

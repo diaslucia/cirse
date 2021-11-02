@@ -41,8 +41,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+/* MOBILE */
 
+@media only screen and (max-width: 600px) {
     .dresses__container {
         @include flex(row, center);
         align-content: flex-start;
@@ -63,4 +64,26 @@ body {
         }
     }
 
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .dresses__container {
+        @include flex(row, center);
+        align-content: flex-start;
+        flex-wrap: wrap;
+        .dresses__div {
+            margin: 1rem;
+            img {
+                width: 15rem;
+                margin: .5rem;
+            }
+            button {
+                @include font(1.5rem);
+                padding: .2rem;
+                margin: 0rem;
+            };
+        }
+    }
 }
