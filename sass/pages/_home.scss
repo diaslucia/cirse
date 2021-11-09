@@ -26,15 +26,6 @@ body {
 
 /* New Collection */
 
-.new__container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(58, 58, 58, 0.51);}
-
 .new__container {
     position: relative;
     margin: 2rem 0rem;
@@ -68,6 +59,15 @@ body {
             margin-bottom: 2rem;
         }
     }
+    
+    .new__container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(58, 58, 58, 0.51);}
     
     .new__img1 {
         width: 70%;
