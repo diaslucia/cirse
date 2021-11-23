@@ -1,4 +1,4 @@
-//PÁGINA HOME
+//HOME
 Interfaz.numeroCarrito();
 
 // ----- Slider
@@ -7,7 +7,7 @@ let slidePosition = 0;
 const slides = document.getElementsByClassName('carousel__item');
 const totalSlides = slides.length;
 
-// Funciones flechas
+// Arrows of my slider
 
 const moveToNextSlide = () => {
   if (slidePosition === totalSlides - 1) {
@@ -36,7 +36,7 @@ function updateSlidePosition() {
   slides[slidePosition].classList.add('carousel__item--visible');
 } 
 
-// Se le asigna la función a las flechitas
+// EventListener for my arrows
 
 const nextButton = document.getElementById("carousel__button--next");
 nextButton.addEventListener("click", moveToNextSlide);

@@ -1,7 +1,7 @@
-// ----- Traigo los productos del localStorage
+// ----- Bring products from localStorage
 const carrito = new Carrito(Helper.traerStorage());
 
-// ----- Delegación de eventos: Escucho si se hace click en el div
+// ----- EventListener
 
 document.querySelector(".cart__container").addEventListener("click", (e) => {
     if (e.target.classList.contains("calc__minus")) {
@@ -19,7 +19,7 @@ document.querySelector(".cart__container").addEventListener("click", (e) => {
     }
 });
 
-// ----- Cupon con jQuery
+// ----- Coupon jQuery
 
 jQuery(function () {
 $("#form").on("submit", function(e) {
@@ -38,7 +38,7 @@ $("#form").on("submit", function(e) {
   })
 });
 
-//Queremos que al cargar la página se vea el carrito
+// ----- Show my cart
 Interfaz.mostrarCarrito();
 Interfaz.numeroCarrito();
 Interfaz.subtotalCarrito();

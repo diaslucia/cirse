@@ -1,7 +1,7 @@
-// ----- Traigo los productos del localStorage
+// ----- Bring products from localStorage
 const carrito = new Carrito(Helper.traerStorage());
 
-// ----- Delegación de eventos: Sort By y Filter By Boton Eventos
+// ----- Sort By/Filter By Buttons
 
 document.getElementById("dropdown").addEventListener("click", (e) => {
   e.preventDefault();
@@ -45,7 +45,7 @@ document.getElementById("dropdown").addEventListener("click", (e) => {
   if (e.target.classList.contains("3/4Sleeve")) {Filtro.filtro("3/4 sleeve");Filtro.display(filterByDropdown);}
 });
 
-// ----- Delegación de eventos: Escucho si se hace click en el div
+// ----- EventListener
 
 document.getElementById("dresses__container").addEventListener("click", (e) => {
     e.preventDefault();
@@ -59,7 +59,7 @@ document.getElementById("dresses__container").addEventListener("click", (e) => {
     }
 });
 
-// ----- Quiero mostrar todos mis productos cuando abra la página
+// ----- Show my products
 const URL = "../JSON/productos.json";
 let productos;
 

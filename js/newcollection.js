@@ -14,7 +14,7 @@ Ripples form on the water's surface,
 The wandering soul knows no rest."</p>
 `);
 
-// Animaciones
+// Animations
 
 $( document ).ready(function() {
     $(".title").css({"color": "#c2a893", "letter-spacing": "1.5rem"});

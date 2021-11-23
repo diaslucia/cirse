@@ -1,7 +1,7 @@
-// ----- Traigo los productos del localStorage
+// ----- Bring products from localStorage
 const carrito = new Carrito(Helper.traerStorage());
 
-// ----- Delegación de eventos: Sort By Button
+// ----- Sort By/Filter By Buttons
 
 document.getElementById("dropdown").addEventListener("click", (e) => {
   e.preventDefault();
@@ -48,7 +48,7 @@ document.getElementById("dropdown").addEventListener("click", (e) => {
 }); 
 
 
-// ----- Delegación de eventos: Escucho si se hace click en el div
+// ----- EventListener
 
 document.getElementById("accesories__container").addEventListener("click", (e) => {
     e.preventDefault();
@@ -62,7 +62,7 @@ document.getElementById("accesories__container").addEventListener("click", (e) =
     }
 });
 
-// ----- Quiero mostrar todos mis productos cuando abra la página
+// ----- Show my products
 const URL = "../JSON/accesorios.json";
 let accesorios;
 
