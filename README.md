@@ -7,7 +7,7 @@ _The challenge was to include a shopping cart but I decided to take a step ahead
 
 ### Tools 🛠️
 
-_This are some of the tools I've used for my project_
+_These are some of the tools I've used for my project_
 
 * [Boostrap](https://getbootstrap.com/) - Only for Grids
 * [SASS](https://sass-lang.com/) - CSS extension to orginize my files
