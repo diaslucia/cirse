@@ -1,15 +1,18 @@
 # Cirse
 
-### Description 🚀
+## Description 🚀
 
-_This web site was my final project for the course of JavaScript. I decided to create a fake vintage clothes and accesories brand. I've used HTML/CSS/JAVASCRIPT._
-_The challenge was to include a shopping cart but I decided to take a step ahead and add a cart counter, "sort by" and "filter by" filters and a coupon input before the checkout._
+This web site was my final project for the JavaScript course. I decided to create a vintage clothes and accesories brand for which I've worked with HTML/CSS, SASS, JavaScript and Firebase.
 
-### Tools 🛠️
+The challenge was to include a shopping cart but I decided to take a step ahead and add a cart counter, "sort by" and "filter by" filters and a coupon input before the checkout.
 
-_These are some of the tools I've used for my project_
+## Website Deploy 🏁
 
-* [Boostrap](https://getbootstrap.com/) - Only for Grids
-* [SASS](https://sass-lang.com/) - CSS extension to orginize my files
-* [AOS](https://michalsnik.github.io/aos/) - For animations
+https://cirse.netlify.app/
+
+## Tools 🛠️
+
+* [Boostrap](https://getbootstrap.com/)
+* [SASS](https://sass-lang.com/)
+* [AOS](https://michalsnik.github.io/aos/)
 * Google Analytics
